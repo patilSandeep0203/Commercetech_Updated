@@ -1,0 +1,147 @@
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.AssemblyReference.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.CoreCompileInputs.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll.config
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.AssemblyReference.cache
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.CoreCompileInputs.cache
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.CopyComplete
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\github clone\commercetech-ASP-main\commercetech-ASP-main\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll.config
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.AssemblyReference.cache
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.CoreCompileInputs.cache
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.CopyComplete
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\ShailShah_qvbweem\Desktop\temp source code\ECENOW.com\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll.config
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.Up2Date
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb

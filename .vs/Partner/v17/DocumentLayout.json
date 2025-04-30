@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\Projects\\Partner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\onlineappmgmt\\createpackage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\onlineappmgmt\\createpackage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\onlineappmgmt\\modifypackage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\onlineappmgmt\\setrates.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\setrates.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\setrates.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\docslogins.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\onlineappmgmt\\__ti_cnf-laptop-5j5jfb3\\web.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\onlineappmgmt\\__ti_cnf\\web.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\__ti_cnf\\web.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\docslogins.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\copy of notice.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Users\\Lenovo\\AppData\\Local\\Temp\\Temporary ASP.NET Files\\root\\f4d5f6f6\\99de9d13\\App_Web_4kjmyswq.6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\root.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\rootmaster\\root.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\payroll\\resdsummary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F00FDF7-2327-48E5-B67E-520C0DBDF71C}|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner|c:\\users\\lenovo\\downloads\\commercetech-asp-live-main\\websites\\partner\\payroll\\resdsummaryprint.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B80D6B5-5CBF-454B-A20D-1BA260BB63E0}|BusinessLayer\\BLPartner.csproj|C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\Projects\\Partner\\businesslayer\\residualsadminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B80D6B5-5CBF-454B-A20D-1BA260BB63E0}|BusinessLayer\\BLPartner.csproj|solutionrelative:businesslayer\\residualsadminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SetRates.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\SetRates.aspx",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\SetRates.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\SetRates.aspx",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\SetRates.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T03:49:42.579Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModifyPackage.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\ModifyPackage.aspx",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\ModifyPackage.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\ModifyPackage.aspx",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\ModifyPackage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T09:46:40.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreatePackage.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T09:42:18.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreatePackage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\CreatePackage.aspx.cs",
+              "ViewState": "AQIAALgBAAAAAAAAAAAiwMQBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:42:18.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SetRates.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\SetRates.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\SetRates.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\SetRates.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\SetRates.aspx.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T09:34:41.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SetRates.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\SetRates.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\SetRates.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\SetRates.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\SetRates.aspx.cs",
+              "ViewState": "AQIAAFcSAAAAAAAAAAA1wF4SAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T05:07:52.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf-LAPTOP-5J5JFB3\\web.config",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf-LAPTOP-5J5JFB3\\web.config",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf-LAPTOP-5J5JFB3\\web.config",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf-LAPTOP-5J5JFB3\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-27T09:33:46.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\__ti_cnf\\web.config",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\__ti_cnf\\web.config",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\__ti_cnf\\web.config",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\__ti_cnf\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-27T09:30:20.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf\\web.config",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf\\web.config",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf\\web.config",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\OnlineAppMgmt\\__ti_cnf\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-27T09:29:53.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DocsLogins.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\DocsLogins.aspx",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\DocsLogins.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\DocsLogins.aspx",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\DocsLogins.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T08:22:54.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocsLogins.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\DocsLogins.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\DocsLogins.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\DocsLogins.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\DocsLogins.aspx.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T08:22:54.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Copy of notice.aspx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Copy of notice.aspx",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\Copy of notice.aspx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Copy of notice.aspx",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\Copy of notice.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T07:11:27.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Default.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Default.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\Default.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Default.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\Default.aspx.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T07:10:10.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App_Web_4kjmyswq.6.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Temporary ASP.NET Files\\root\\f4d5f6f6\\99de9d13\\App_Web_4kjmyswq.6.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Temporary ASP.NET Files\\root\\f4d5f6f6\\99de9d13\\App_Web_4kjmyswq.6.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\Temporary ASP.NET Files\\root\\f4d5f6f6\\99de9d13\\App_Web_4kjmyswq.6.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Temporary ASP.NET Files\\root\\f4d5f6f6\\99de9d13\\App_Web_4kjmyswq.6.cs",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAgwBIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T07:09:44.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Root.master",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Root.master",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\Root.master",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Root.master",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\Root.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T07:05:55.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Root.master.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\RootMaster\\Root.master.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\RootMaster\\Root.master.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\RootMaster\\Root.master.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\RootMaster\\Root.master.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwDMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T07:05:40.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResdSummary.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Payroll\\ResdSummary.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\Payroll\\ResdSummary.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Payroll\\ResdSummary.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\Payroll\\ResdSummary.aspx.cs",
+              "ViewState": "AQIAALAAAAAAAAAAAAAtwLwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T05:44:36.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResdSummaryPrint.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Payroll\\ResdSummaryPrint.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\WebSites\\Partner\\Payroll\\ResdSummaryPrint.aspx.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\WebSites\\Partner\\Payroll\\ResdSummaryPrint.aspx.cs",
+              "RelativeToolTip": "..\\..\\WebSites\\Partner\\Payroll\\ResdSummaryPrint.aspx.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAIAwwEoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T05:38:05.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ResidualsAdminBL.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\Projects\\Partner\\BusinessLayer\\ResidualsAdminBL.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\ResidualsAdminBL.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\commercetech-ASP-live-main\\Projects\\Partner\\BusinessLayer\\ResidualsAdminBL.cs",
+              "RelativeToolTip": "BusinessLayer\\ResidualsAdminBL.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAtwH0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T05:40:37.059Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

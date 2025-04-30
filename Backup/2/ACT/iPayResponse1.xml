@@ -1,0 +1,9 @@
+<ApplicationResponse xmlns="http://ipaymentinc.com/MerchantApplications/20110105" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <ApplicationErrors />
+  <ApplicationID>845934</ApplicationID>
+  <ApplicationStatus />
+  <ErrorCount>0</ErrorCount>
+  <MerchantNumber />
+  <Notes />
+  <ApplicationUrl i:nil="true" />
+</ApplicationResponse>

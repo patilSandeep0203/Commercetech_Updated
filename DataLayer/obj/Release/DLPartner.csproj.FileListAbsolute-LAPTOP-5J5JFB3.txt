@@ -1,0 +1,68 @@
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\obj\Release\DLPartner.csprojResolveAssemblyReference.cache
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\DataLayer\obj\Release\DLPartner.csprojResolveAssemblyReference.cache
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\DataLayer\obj\Release\DLPartner.csproj.AssemblyReference.cache
+S:\Employee Folders\Wu, Ting\Web-DBA\Business\Websites\ECENOW.com\Projects\Partner\DataLayer\obj\Release\DLPartner.csproj.CoreCompileInputs.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.csproj.AssemblyReference.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.csproj.CoreCompileInputs.cache
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Users\RobertComstock1\Documents\CommerceCoding\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Properties\Settings.Designer.cs
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Properties\AssemblyInfo.cs
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Properties\Settings.settings
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\DLPartner.dll.config
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\DLPartner.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\DLPartner.pdb
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\Settings.Designer.cs
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\AssemblyInfo.cs
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\Settings.settings
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Users\TingWu1\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\Settings.Designer.cs
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\AssemblyInfo.cs
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\Settings.settings
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Users\TingWu\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\Settings.Designer.cs
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\AssemblyInfo.cs
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\Properties\Settings.settings
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu\OneDrive - Commerce Technologies Corporation\Documents\CommerceTechWebCode\CommerceGit\Projects\Partner\DataLayer\obj\Release\DLPartner.csprojResolveAssemblyReference.cache

@@ -1,0 +1,96 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Reports/Admin.master.cs" Inherits="Reports_Admin" MasterPageFile="~/Root.master" %>
+<asp:Content ID="AdminContent" ContentPlaceHolderID="RootContent" runat="server">
+    <asp:Menu ID="mnuAdminMain" runat="server" Orientation="Horizontal" BackColor="#F7F6F3"
+        DynamicHorizontalOffset="2" Font-Names="Arial" Font-Size="8pt" ForeColor="#7C6F57"
+        StaticSubMenuIndent="8pt" StaticEnableDefaultPopOutImage="False" BorderStyle="None"
+        Width="100%" Style="text-align: center;">
+        <DynamicMenuStyle CssClass="IE"/>
+        <Items>
+            <asp:MenuItem Text="Residuals" Value="Residuals" Selectable="false">
+            <asp:MenuItem NavigateUrl="Residuals/Residuals.aspx" Text="Residuals" Value="Residuals">
+            </asp:MenuItem>
+            <asp:MenuItem Selectable="False" Text="Processors / Banks" Value="Processors / Banks">
+                <asp:MenuItem NavigateUrl="Residuals/iPay.aspx" Text="iPayment (1503)" Value="iPayment (1503)">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/iPay2.aspx" Text="iPayment (40558)"
+                    Value="iPayment (40558)"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/iPay3.aspx" Text="iPayment (02733)"
+                    Value="iPayment (02733)"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/iPayFBBH.aspx" Text="iPayment FBBH"
+                    Value="iPayment FBBH"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/ims.aspx" Text="IMS (248)" Value="IMS (248)">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/IPS.aspx" Text="IPS" Value="IPS">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/ims2.aspx" Text="IMS (QB 487)" Value="IMS (QB 487)">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/Sage.aspx" Text="Sage" Value="Sage">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/Innovative.aspx" Text="Innovative" Value="Innovative">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/CPS.aspx" Text="CPS" Value="CPS"></asp:MenuItem>                
+                <asp:MenuItem NavigateUrl="Residuals/chase.aspx" Text="Chase" Value="Chase">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/Merrick.aspx" Text="Merrick" Value="Merrick">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/OptimalCA.aspx" Text="Optimal CA/Intl"
+                    Value="Optimal CA/Intl"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/wpay.aspx" Text="WorldPay" Value="WorldPay">
+                </asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Selectable="False" Text="Payment Gateways" Value="Payment Gateways">
+                <asp:MenuItem NavigateUrl="Residuals/Authnet.aspx" Text="Authorize.Net" Value="Authorize.Net">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/iPayGate.aspx" Text="iPayment Gateway"
+                    Value="iPayment Gateway"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/InnGate.aspx" Text="Innovative Gateway"
+                    Value="Innovative Gateway"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/PlugNPay.aspx" Text="Plug N Pay" Value="Plug N Pay">
+                </asp:MenuItem>                
+            </asp:MenuItem>
+            <asp:MenuItem Selectable="False" Text="Other" Value="Other">                
+                <asp:MenuItem NavigateUrl="Residuals/Disc.aspx" Text="Discover Rap" Value="Discover Rap">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/CheckServices.aspx" Text="Check Services" Value="Check Services">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/GiftCardServices.aspx" Text="Gift Card Services" Value="Gift Card Services">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/CTCart.aspx" Text="CT Cart" Value="CT Cart">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/MerchantCashAdvance.aspx" Text="Merchant Cash Advance" Value="Merchant Cash Advance">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Residuals/PayrollServices.aspx" Text="Payroll" Value="Payroll">
+                </asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="Residuals/ActivatedResd.aspx" Text="Activated Reports"
+                Value="Activated Reports"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="Residuals/DroppedResd.aspx" Text="Dropped Reports"
+                Value="Dropped Reports"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="Residuals/ZeroNegativeResiduals.aspx" Text="Zero and Negative Residuals"
+                Value="Zero and Negative Residuals"></asp:MenuItem>
+        </asp:MenuItem>        
+        <asp:MenuItem NavigateUrl="Commissions.aspx" Text="Commissions" Value="Commissions">
+        </asp:MenuItem>
+        <asp:MenuItem NavigateUrl="Referrals.aspx" Text="Referrals" Value="Referrals">
+        </asp:MenuItem>
+        <asp:MenuItem NavigateUrl="CTCSalesOpps.aspx" Text="Sales Opps History" Value="Sales Opps History">
+        </asp:MenuItem>
+        </Items>
+        <StaticMenuItemStyle Font-Size="8pt" HorizontalPadding="10px" VerticalPadding="3px" BorderColor="Silver" />
+        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" CssClass="MenuCss" />
+        <DynamicMenuStyle BackColor="#F7F6F3" Font-Size="8pt" />
+        <StaticSelectedStyle BackColor="#5D7B9D" Font-Names="Arial" Font-Size="8pt" />
+        <DynamicSelectedStyle BackColor="#5D7B9D" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BorderColor="Silver"
+            BorderWidth="1px" />
+        <StaticItemTemplate>
+            <%# Eval("Text") %>
+        </StaticItemTemplate>
+        <StaticHoverStyle BackColor="#4D99E6" ForeColor="White" Font-Names="Arial" Font-Size="8pt" CssClass="MenuCss" />
+        <StaticMenuStyle BorderColor="Gray" BorderWidth="1px" />
+    </asp:Menu>
+    <asp:contentplaceholder id="MainContent" runat="server">
+    </asp:contentplaceholder>
+</asp:Content>
+
+

@@ -1,0 +1,53 @@
+<iPaymentApplication xmlns="http://www.ipaymentinc.com" Stamp="IPI0608">
+  <ExtendedInfo salesNumber="02733-001" salesName="Jay Scott" salesPhone="800-477-5363" salesID="86804" FormID="1306" Version="0212.2" id="-1">
+  </ExtendedInfo>
+  <BusinessInfo id="-1" legalBusinessName="Busy Hands Fun Center Inc" doingBusinessAs="Busy Hands Fun Center" address="1527 South Ave West " address2="" city="Missoula" state="MT" zip="59801" county="United States" monthsAtAddress="1" yearsAtAddress="1" mainPhone="406-549-1119" customerServicePhone="406-549-1119" mainFaxPhone="" contactFirstName="Travis" contactLastName="Wahl" numberOfLocations="1" yearsInBusiness="20" monthsInBusiness="9" businessHours="7am to 12pm" mainEmailAddress="wahl97@gmail.com" mainWebSite="" HasWebsite="false" mailingAddress="1527 South Ave West " mailingAddress2="" mailingAddressCity="Missoula" mailingAddressState="MT" mailingAddressZip="59801" federalTaxID="810460778" merchantType="1" ownershipType="Corporation" businessLocationType="3" businessLocationTypeComment="" productsType="Child Care" methodsOfMarketingType="" refundPolicy="2" productDeliveryInDays="1" productDeliveryComments="" appliedBefore="true" appliedBeforePriorProcessor="First Data Merchant Services" previousMerchantNumbers="536385630101467" creditCardProcessorPriorClosureWhom="First Data Merchant Services" creditCardProcessorPriorClosure="false" creditCardProcessorPriorClosureExplaination="Bad Service" openDateYear="1993" openDateMonth="7" lengthOfOwnership="20" locationNumber="1" b2BPercent="0" IsB2B="False" IsVendorFulfillmentHouse="False" VFHName="" VFHAddress1="" VFHAddress2="" VFHCity="" VFHState="" VFHZip="" VFHPhone="" UsesThirdPartyData="false" TPDName="" TPDAddress1="" TPDAddress2="" TPDCity="" TPDState="" TPDZip="" TPDPhone="" TPDSoftware="" ActiveMonthsString="111111111111" ReturnPolicy="2" ReturnPolicyComment="" Days2Deliver="1" DeliveryStartDate="" DeliveryComments="" RunCreditReport="" creditReportComments="" Portfolio="IPI" AppVersion="0212.2" PaymentGatewayMonthlyFee="0.00" paymentGatewayName="">
+  </BusinessInfo>
+  <SalesBreakDown id="-1" retailSwipePercentage="100" retailKeyedPercentage="0" internetPercentage="0" mailOrderPercentage="0">
+  </SalesBreakDown>
+  <PrincipalCollection>
+    <Principal number="1" firstName="Travis" lastName="Wahl" socialSecurityNumber="516131101" ownershipPercentage="50" title="Owner" residentialAddress="5215 Dutton Court " residentialAddress2="" isRented="" city="Missoula" state="MT  " zip="59803" email="wahl97@gmail.com" howLongAtAddress="84" homePhone="406-493-0742" dateOfBirth="07/05/1973" driversLicenseNumber="071719734105" driversLicenseState="MT" checkCreditScore="" OwnershipType="Own" id="2">
+    </Principal>
+    <Principal number="2" firstName="Dawn" lastName="Wahl" socialSecurityNumber="516986605" ownershipPercentage="50" title="Owner" residentialAddress="5215 Dutton Court " residentialAddress2="" isRented="false" city="Missoula" state="MT" zip="59803" email="" howLongAtAddress="" homePhone="406-493-0742" dateOfBirth="11/15/1967" driversLicenseNumber="110511967411" driversLicenseState="MT" checkCreditScore="" OwnershipType="Own" />
+  </PrincipalCollection>
+  <ReferenceCollection />
+  <Fees id="-1" monthlyProcessingLimit="12000" monthlyAverageTicket="30" monthlyMinimumDiscountFee="20.00" monthlyHighTicket="450" aVSFee="0.02" aCHReturnItemFee="25.00" aCHChangeFee="25.00" retrievalRequestFee="25.00" chargebackFee="25.00" pfcRecoveryFee="0.00" mtcFRPFee="0.00" overLimitFee="0.00" useDiscountInterchange="False" creditCardDiscountQualifiedFee="1.49" creditCardDiscountMidQualifiedFee="2.49" creditCardDiscountNonQualifiedFee="3.49" debitDiscountQualifiedFee="0.99" debitDiscountMidQualifiedFee="1.99" debitDiscountNonQualifiedFee="2.99" batchHeaderFee="0.21" voiceAuthFee="0.95" annualFee="75.00" reserveAccountFee="2.50" customerService="10.00" tAndEAuth="0.00" monthlyOnlineView="0.00" batchClosure="0.00" debitCardMonthlyNetworkGateway="0.00" eBTTransaction="0.00" e-Commerce="0.00" onlineAccessSingle="0.00" onlineAccessChain="0.00" MCC_SIC="" iAccess="true" iAccessFee="0.00" MerchantOrPremierClub="false" MerchantOrPremierClubFee="0.00" InterchangePlus="" VisaMCTransactionFee="0.21" TnETransactionFee="0.21" EarlyTerminationFee="0.00" SetupFee="0.00" MonthlyAccessFee="0.00" PerAuthFee="0.21" HighRiskFee="0.25" RetailMerchantAnualFee="" NonRetailMerchantAnualFee="75.00" PlusDuesAndAssessments="" WexVoyagerTranFee="0.00" ErrRate="0.00" ERRTransactionFee="0.00">
+  </Fees>
+  <Equipment id="-1" terminalType="8" terminalModel="" wirelessType="4" softwareRequirementNotes="" softwareRequirementNetworkVersion="" softwareRequirementConnectionType="" softwareRequirementConcurrentUsers="" softwareRequirementAdditionalIDNumbers="" software="" reprogram="false" rentQuote="" hasPrinter="false" printerModel="" phoneSystemSplitterNeeded="false" phoneSystemDialOut="4" PhoneCodeForDialOutComment="" phoneSystemCallWaiting="false" paymentGatewayName="" hasPinPad="false" pINPadModel="" frontEndType="1" frontEndComment="" debitAddendumAttached="false" automaticTimeZone="" automaticTime="" automaticClose="false" isEquipmentARU="false" NeedsStarterKit="false" ImprinterType="-99" Plate="false" PlateQuality="0" ToDoInstall="false" ToDoInstallComment="" SuppliesEquipment="false" SuppliesEquipmentComment="" ShoppingCart="" CellphoneCarrier="" CellphoneManufacturer="" CellphoneModel="" CellphoneNumber="" AccountType="" OrderType="" CheckService="0" CheckServiceAccountType="" CheckServiceProductType="" CheckServiceDiscountRate="0" CheckServiceMonthlyMin="0" CheckServiceStatementFee="0" CheckServiceTranFee="0">
+  </Equipment>
+  <LeaseInfo id="-1" leaseTerm="" EquipmentServiceProgram="true" totalMonthlyLeaseCharge="0.00" NonCancelableLease="false" AnnualTaxHandlingFee="0.00" IsLeaseTermsAcknowledged="false" IsLeasePaymentDeductionAcknowledged="false" IsLeaseNonCancelableAcknowledged="false" IsLeaseEquipmentDeliveryAcknowledged="false">
+  </LeaseInfo>
+  <Terminals xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Terminal TerminalID="8" TerminalBrand="Other" TerminalModel="See Notes" FrontEndName="Omaha" ModelID="705" PrinterID="-1" PrinterName="" PinPadID="-1" ReProgram="false" Notes="" WirelessID="4" automaticClose="false" AutomaticCloseTime="0001-01-01T00:00:00" TimeZoneID="0" PhoneDialOutCodeID="4" FrontEndID="1" IsLease="false" IsCashSale="false">
+      <DownloadInformation Application="" AdditionalFeatures="" TiedMultiMerchantNumber="" SpecialPrompts="" SpecialFeaturesProvider="" ApplicationDDLTID="" ApplicationDDLPhone="" DateFileBuilt="0001-01-01T00:00:00" LoadInstructions="" EquipmentLocation="" PaywareMobileDevice="G3" PaywayreMobileDeviceVersion="" />
+      <WirelessInformation WirelessCommType="DialUp" WirelessCarrier="" WirelessTcpIpGateway="" WirelessDatawireDID="" WirelessSIMCard="" WirelessESNNumber="" WirelessMANNumber="" />
+      <ShippingInformation ShipTo="AgentOffice" ShippingServiceType="Ground" SerialNumber="" DeploymentDate="0001-01-01T00:00:00" Condition="New" Origin="0" />
+      <PinPadInformation PinPadModelName="" PinPadCount="1" CheckReaderCount="0" CardReaderCount="0" FreeTerminalProgram="false" EncryptionMethod="Blank" />
+      <IsDeployPinPad>false</IsDeployPinPad>
+      <IsDeployPrinter>false</IsDeployPrinter>
+      <IsDeployCheckReader>false</IsDeployCheckReader>
+      <IsDeployCardReader>false</IsDeployCardReader>
+      <IsDeployPinPadCable>false</IsDeployPinPadCable>
+    </Terminal>
+  </Terminals>
+  <Gateways xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  <Softwares xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  <ExistingMerchant id="-1" americanExpress="" diners="" discover="" jCB="">
+  </ExistingMerchant>
+  <Amex discountRate="" monthlyFlatFee="" grossPayType="" estimateAnnualVolume="" estimateAverageTicket="" payFrequency="" merchantInitials="">
+  </Amex>
+  <Discover discountRate="" transactionFee="" membershipFee="">
+  </Discover>
+  <BankInformation id="-1" name="First Security Bank" address="1704 Dearborn Ave" address2="" city="Missoula" state="MT" zip="59801" branch="" branchPhone="406-549-1119" contactName="" transRoutingNumber="092901337" dDA="9107605">
+  </BankInformation>
+  <SiteSurvey id="-1" date="" typeOfBuilding="" squareFootage="-1" inspectorComments="">
+  </SiteSurvey>
+  <ServiceEnrollment ID="-1" ApplicationID="-1" DebitCardServices="false" ETB_FNS="false" ETB_FNS_Number="" CheckServices="false" LeaseServices="false" GiftCardServices="false" WexVoyagerServices="false" WirelessServices="false" GatewayServices="false">
+  </ServiceEnrollment>
+  <CardAcceptance ID="-1" ApplicationID="-1" MCCredit="false" MCNonPinDebit="false" VisaCredit="false" VisaNonPinDebit="false" DiscoverCredit="false" DiscoverNonPinDebit="false">
+  </CardAcceptance>
+  <SalesRepInfo ID="-1" ApplicationID="-1" Auth="" InerchangeTable="" Assoc="" Grid="">
+  </SalesRepInfo>
+  <ApplicationMetadata>
+  </ApplicationMetadata>
+</iPaymentApplication>

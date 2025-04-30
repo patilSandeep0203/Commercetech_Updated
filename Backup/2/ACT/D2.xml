@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<iPaymentApplication xmlns="http://www.ipaymentinc.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+  <ExtendedInfo salesNumber="" salesName="CTC Demo2">
+  </ExtendedInfo>
+  <BusinessInfo legalBusinessName="Commerce Technologies Corp" doingBusinessAs="E-Commerce Exchange" address="909 N. Sepulveda Blvd " address2="Suite 480" city="El Segundo" state="SD" zip="90245" county="United States" monthsAtAddress="0" yearsAtAddress="10" mainPhone="310-321-5409" customerServicePhone="" mainFaxPhone="" contactFirstName="Demo" contactLastName="2" numberOfLocations="3" yearsInBusiness="5" monthsInBusiness="4" businessHours="24/7" mainEmailAddress="twu@ecenow.com" mainWebSite="" mailingAddress="909 N. Sepulveda Blvd " mailingAddress2="Suite 480" mailingAddressCity="El Segundo" mailingAddressState="SD " mailingAddressZip="90245" federalTaxID="111111111" merchantType="" ownershipType="Sole Proprietorship" businessLocationType="" businessLocationTypeComment="" productsType="services" methodsOfMarketingType="" refundPolicy="No Refund" productDeliveryInDays="2" productDeliveryComments="" appliedBefore="false" appliedBeforePriorProcessor="" previousMerchantNumbers="" creditCardProcessorPriorClosureWhom="" creditCardProcessorPriorClosure="false" creditCardProcessorPriorClosureExplaination="n/a" openDateYear="" openDateMonth="" lengthOfOwnership="" locationNumber="" b2BPercent="" IsB2B="" IsVendorFulfillmentHouse="" VFHName="" VFHAddress1="" VFHAddress2="" VFHCity="" VFHState="" VFHZip="" VFHPhone="" UsesThirdPartyData="" TPDName="" TPDAddress1="" TPDAddress2="" TPDCity="" TPDState="" TPDZip="" TPDPhone="" TPDSoftware="" ActiveMonthsString="" ReturnPolicy="No Refund" ReturnPolicyComment="" Days2Deliver="2" DeliveryStartDate="" DeliveryComments="" RunCreditReport="" creditReportComments="">
+  </BusinessInfo>
+  <SalesBreakDown retailSwipePercentage="100" retailKeyedPercentage="0" internetPercentage="0" mailOrderPercentage="0">
+  </SalesBreakDown>
+  <PrincipalCollection>
+    <Principal number="1" firstName="Demo" lastName="2" socialSecurityNumber="111111111" ownershipPercentage="55" title="test" residentialAddress="909 N. Sepulveda Blvd " residentialAddress2="Suite 480" isRented="" city="El Segundo" state="CA  " zip="90245" email="twu@ecenow.com" howLongAtAddress="240" homePhone="310-321-5409" dateOfBirth="01/01/1965" driversLicenseNumber="1111111111111111" driversLicenseState="CA  ">
+    </Principal>
+    <Principal number="2" firstName="Ting" lastName="Wu" socialSecurityNumber="123456789" ownershipPercentage="45" title="Account Coordinator" residentialAddress="123 " residentialAddress2="" isRented="false" city="29 Palms" state="CA" zip="90245" email="" howLongAtAddress="240" homePhone="310-321-5400" dateOfBirth="04/11/1981" driversLicenseNumber="E1234567" driversLicenseState="CA" xmlns="" />
+  </PrincipalCollection>
+  <ReferenceCollection>
+    <Reference>
+    </Reference>
+  </ReferenceCollection>
+  <Fees>
+  </Fees>
+  <Equipment>
+  </Equipment>
+  <LeaseInfo>
+  </LeaseInfo>
+  <Terminals>
+    <Terminal>
+    </Terminal>
+  </Terminals>
+  <Gateways>
+    <Gateway>
+    </Gateway>
+  </Gateways>
+  <Softwares>
+    <Software>
+    </Software>
+  </Softwares>
+  <BankInformation>
+  </BankInformation>
+</iPaymentApplication>

@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="wsSalesPortal" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="wsSalesPortal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="wsSalesPortal">
+      <s:element name="CreateMerchantApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantApplication" type="tns:clsMerchantApplicationV1" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="clsMerchantApplicationV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AppInfo" type="tns:clsAppInfoV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reference" type="tns:clsReferenceV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankInfo" type="tns:clsBankInfoV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchProduct" type="tns:ArrayOfClsMerchProductV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchProductService" type="tns:ArrayOfClsMerchProductServiceV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchCredit" type="tns:clsMerchCreditV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchDebit" type="tns:clsMerchDebitV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchEBT" type="tns:clsMerchEBTV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchGlobalE" type="tns:clsMerchGlobalEV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchEFTSecure" type="tns:clsMerchEFTSecureV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchGiftLoyalty" type="tns:clsMerchGiftLoyaltyV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchAdvanceFunding" type="tns:clsMerchAdvanceFundingV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchTE" type="tns:ArrayOfClsMerchTEV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchBETInterchange" type="tns:ArrayOfClsMerchBETInterchangeV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchBETPlanTable" type="tns:ArrayOfClsMerchBETPlanTableV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchEFTInfo" type="tns:clsMerchEFTInfoV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchEFTMerchantProfile" type="tns:clsMerchEFTMerchantProfileV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchEFTOriginator" type="tns:ArrayOfClsMerchEFTOriginatorV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchFee" type="tns:ArrayOfClsMerchFeeV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchLeaseRental" type="tns:clsMerchLeaseRentalV1" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchStartupFee" type="tns:ArrayOfClsMerchStartupFeeV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsAppInfoV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AppInfoID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplicationDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OfficeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OfficeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssociationID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AssociationName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ContractorID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContractorName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CorpTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusOpenDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpAddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpZip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CorpCountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpContactFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpContactMiddleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpContactLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpContactTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpContactDept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpEMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FedTaxID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DunnBradNum" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VIP" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocURL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocEMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBAAddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBAAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBACity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBAState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBAZip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DBACountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBACountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBAPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBAFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerServicePhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1FName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1LName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1SSN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1Equity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LengthOwner1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1FaxNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1EMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1Zip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Owner1CountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner1DOB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2FName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2LName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2SSN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2Equity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LengthOwner2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2FaxNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2EMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2Zip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Owner2CountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner2DOB" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BusinessLevelID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessLevel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Seasonal" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="HighVolMonths" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HighVolMonthsDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Product" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HomeBased" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrivateLabel" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="VerusSubID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReferralGroupID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferralGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsoLiability" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Submitted" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastModifiedDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeadSourceID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LeadSource" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AppID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CorpID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CorpMailingAddress" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DBAMailingAddress" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeneralComment" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DaysUntilProductDelivery" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnPolicyID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnPolicy" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsReferenceV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceZip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReferenceCountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferencePhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceContact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceEmail" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsBankInfoV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BankName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditRoutingNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditAccountNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DebitRoutingNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DebitAccountNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchProductV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchProductV1" nillable="true" type="tns:clsMerchProductV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchProductV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProductID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Product" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchProductServiceV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchProductServiceV1" nillable="true" type="tns:clsMerchProductServiceV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchProductServiceV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MerchProductServiceID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductServiceID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductServiceDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchCreditV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FrontEndProcessorID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontEndProcessorDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BackEndProcessorID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankEndProcessorDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserBankID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserBankName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AverageTicket" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyVolume" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxSalesAmt" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="VolumeLimit" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnnualFeeMonth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardPresentSwiped" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardPresentImprint" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNotPresent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SalesToConsumer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SalesToGov" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusToBus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrentProcessor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountPaidID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DiscountPaidDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SettleTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SettlementBankID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SettlementBankDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BetInterchangeTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BetInterchangeTypeDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchDebitV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UnderwriterID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnderwriterName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PinInjectionID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PinInjectionDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchEBTV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FCSNum" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchGlobalEV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AvgCheckAmt" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxCheckAmt" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyVolume" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyServiceFee" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="DLNum" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OnlineRpt" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchEFTSecureV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VirtualTerminal" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="VirtualTerminal3" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShoppingCart" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="GatewayAPI" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="GatewayXML" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTSecureMID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTSecureMKey" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchGiftLoyaltyV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyServiceFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SetupFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PerCardReOrderFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TrainingFeeCharge" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="GiftProgram" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoyaltyProgram" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IntroPlan" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeluxePlan" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomPlan" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CardDesignID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardDesign" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchAdvanceFundingV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AFProcessorID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AFProcessor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchTEV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchTEV1" nillable="true" type="tns:clsMerchTEV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchTEV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CardTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MerchTEStatusID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchTEStatusDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountNum" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchBETInterchangeV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchBETInterchangeV1" nillable="true" type="tns:clsMerchBETInterchangeV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchBETInterchangeV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CardTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BetInterchangeID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountQualifiedRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountCheckcardRate" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchBETPlanTableV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchBETPlanTableV1" nillable="true" type="tns:clsMerchBETPlanTableV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchBETPlanTableV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BetPlanTableTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BetPlanTableType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpenseTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpenseType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CardTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PerItemFee" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchEFTInfoV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AppStatusID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppStatusDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnderwriterID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AnnualVolume" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="AverageTicket" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxSalesAmount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WrittenPercent" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonWrittenPercent" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SeasonalMerchant" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="HighVolumeMonths" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DDAValidation" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendEmail" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendFax" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddedToEnterpriseACHDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MerchantInitiatedPercentage" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsumerInitiatedPercentage" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateRecAdded" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchEFTMerchantProfileV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StartDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContractDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFTPlanID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTPlanDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFTBillingCycleID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTBillingCycleDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SettleTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SettleTypeDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReserveAmount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PlanFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinimumFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RejectFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatementFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFTGatewayFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SoftwareMaintenance" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ARCItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TELItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDItemWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDItemNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDDiscountRateWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDDiscountRateNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthStandardDiscountWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthStandardItemWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthStandardDiscountNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthStandardItemNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthPremiumDiscountWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthPremiumItemWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthPremiumDiscountNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PPDAuthPremiumItemNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDItemWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDItemNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDDiscountRateWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDDiscountRateNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthStandardDiscountWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthStandardItemWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthStandardDiscountNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthStandardItemNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthPremiumDiscountWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthPremiumItemWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthPremiumDiscountNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CCDAuthPremiumItemNonWrittenFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RCKDiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RCKItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RCKStandardItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RCKStandardDiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RCKPremiumItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RCKPremiumDiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WEBDiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WEBItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WEBStandardItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WEBStandardDiscountRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WEBPremiumItemFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="WEBPremiumDiscountRate" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddedToEnterpriseACHDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateRecAdded" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchEFTOriginatorV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchEFTOriginatorV1" nillable="true" type="tns:clsMerchEFTOriginatorV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchEFTOriginatorV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OriginatorDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFTClearingBankID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTClearingBankDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFTTransactionTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTTransactionTypeDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFTAuthenticationTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFTAuthenticationTypeDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RepaymentDays" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisbursementABANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisbursementDDANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RejectABANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RejectDDANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FeeABANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FeeDDANumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Written" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ResubmitR01" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Payroll" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoldFiles" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="HoldFilesDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditTransactionLimit" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditVolumeLimit1Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditVolumeLimit3Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditVolumeLimit15Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditVolumeLimit30Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitTransactionLimit" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitVolumeLimit1Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitVolumeLimit3Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitVolumeLimit15Day" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitVolumeLimit30Day" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchFeeV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchFeeV1" nillable="true" type="tns:clsMerchFeeV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchFeeV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MerchFeeItemID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchFeeItem" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchLeaseRentalV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="LeaseRentalTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LeaseRentalType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeaseRentalCompanyID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LeaseRentalCompany" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeaseRentalTermID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeaseRentalTerm" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeasePaymentAmount" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsMerchStartupFeeV1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsMerchStartupFeeV1" nillable="true" type="tns:clsMerchStartupFeeV1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsMerchStartupFeeV1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FeeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ChargeAmount" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateMerchantApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateMerchantApplicationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="clsAuthenticationHeader" type="tns:clsAuthenticationHeader" />
+      <s:complexType name="clsAuthenticationHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="UpdateMerchantApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantApplication" type="tns:clsMerchantApplicationV1" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateMerchantApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateMerchantApplicationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryMerchantApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applicationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantApplication" type="tns:clsMerchantApplicationV1" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryMerchantApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryMerchantApplicationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantApplication" type="tns:clsMerchantApplicationV1" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmailMerchantApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applicationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailData" type="tns:clsEmailData" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="clsEmailData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bcc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="attachments" type="tns:ArrayOfClsEmailAttachment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsEmailAttachment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsEmailAttachment" nillable="true" type="tns:clsEmailAttachment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsEmailAttachment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fileData64" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmailMerchantApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmailMerchantApplicationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListMerchFee">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListMerchFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListMerchFeeResult" type="tns:ArrayOfClsMerchFeeV1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListProduct">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListProductResult" type="tns:ArrayOfClsMerchProductV1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="countryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListStateResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfClsListItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="clsListItem" nillable="true" type="tns:clsListItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="clsListItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListCountry">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListCountryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListCountryResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListUserBank">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListUserBankResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListUserBankResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAssociation">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListAssociationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAssociationResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCorpType">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListCorpTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListCorpTypeResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListLeadSource">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListLeadSourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListLeadSourceResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListBusinessLevel">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListBusinessLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListBusinessLevelResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListReturnPolicy">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListReturnPolicyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListReturnPolicyResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListDiscountPaid">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListDiscountPaidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListDiscountPaidResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListBetInterchangeType">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListBetInterchangeTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListBetInterchangeTypeResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListMerchTEStatus">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListMerchTEStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListMerchTEStatusResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCardType">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListCardTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListCardTypeResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListExpenseType">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListExpenseTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListExpenseTypeResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListBetPlanTableType">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListBetPlanTableTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListBetPlanTableTypeResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListFrontEndProcessor">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListFrontEndProcessorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListFrontEndProcessorResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListBackEndProcessor">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListBackEndProcessorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListBackEndProcessorResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSettlementBank">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListSettlementBankResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListSettlementBankResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListContractor">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListContractorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListContractorResult" type="tns:ArrayOfClsListItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateMerchantApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateMerchantApplication" />
+  </wsdl:message>
+  <wsdl:message name="CreateMerchantApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateMerchantApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateMerchantApplicationclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMerchantApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateMerchantApplication" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMerchantApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateMerchantApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMerchantApplicationclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="QueryMerchantApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryMerchantApplication" />
+  </wsdl:message>
+  <wsdl:message name="QueryMerchantApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryMerchantApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryMerchantApplicationclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="EmailMerchantApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:EmailMerchantApplication" />
+  </wsdl:message>
+  <wsdl:message name="EmailMerchantApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:EmailMerchantApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmailMerchantApplicationclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListMerchFeeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListMerchFee" />
+  </wsdl:message>
+  <wsdl:message name="ListMerchFeeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListMerchFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListMerchFeeclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListProductSoapIn">
+    <wsdl:part name="parameters" element="tns:ListProduct" />
+  </wsdl:message>
+  <wsdl:message name="ListProductSoapOut">
+    <wsdl:part name="parameters" element="tns:ListProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListProductclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListStateSoapIn">
+    <wsdl:part name="parameters" element="tns:ListState" />
+  </wsdl:message>
+  <wsdl:message name="ListStateSoapOut">
+    <wsdl:part name="parameters" element="tns:ListStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListStateclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListCountrySoapIn">
+    <wsdl:part name="parameters" element="tns:ListCountry" />
+  </wsdl:message>
+  <wsdl:message name="ListCountrySoapOut">
+    <wsdl:part name="parameters" element="tns:ListCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListCountryclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListUserBankSoapIn">
+    <wsdl:part name="parameters" element="tns:ListUserBank" />
+  </wsdl:message>
+  <wsdl:message name="ListUserBankSoapOut">
+    <wsdl:part name="parameters" element="tns:ListUserBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListUserBankclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListAssociationSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAssociation" />
+  </wsdl:message>
+  <wsdl:message name="ListAssociationSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAssociationclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListCorpTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListCorpType" />
+  </wsdl:message>
+  <wsdl:message name="ListCorpTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListCorpTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListCorpTypeclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListLeadSourceSoapIn">
+    <wsdl:part name="parameters" element="tns:ListLeadSource" />
+  </wsdl:message>
+  <wsdl:message name="ListLeadSourceSoapOut">
+    <wsdl:part name="parameters" element="tns:ListLeadSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListLeadSourceclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListBusinessLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:ListBusinessLevel" />
+  </wsdl:message>
+  <wsdl:message name="ListBusinessLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:ListBusinessLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListBusinessLevelclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListReturnPolicySoapIn">
+    <wsdl:part name="parameters" element="tns:ListReturnPolicy" />
+  </wsdl:message>
+  <wsdl:message name="ListReturnPolicySoapOut">
+    <wsdl:part name="parameters" element="tns:ListReturnPolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListReturnPolicyclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListDiscountPaidSoapIn">
+    <wsdl:part name="parameters" element="tns:ListDiscountPaid" />
+  </wsdl:message>
+  <wsdl:message name="ListDiscountPaidSoapOut">
+    <wsdl:part name="parameters" element="tns:ListDiscountPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListDiscountPaidclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListBetInterchangeTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListBetInterchangeType" />
+  </wsdl:message>
+  <wsdl:message name="ListBetInterchangeTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListBetInterchangeTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListBetInterchangeTypeclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListMerchTEStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ListMerchTEStatus" />
+  </wsdl:message>
+  <wsdl:message name="ListMerchTEStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ListMerchTEStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListMerchTEStatusclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListCardTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListCardType" />
+  </wsdl:message>
+  <wsdl:message name="ListCardTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListCardTypeclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListExpenseTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListExpenseType" />
+  </wsdl:message>
+  <wsdl:message name="ListExpenseTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListExpenseTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListExpenseTypeclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListBetPlanTableTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:ListBetPlanTableType" />
+  </wsdl:message>
+  <wsdl:message name="ListBetPlanTableTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:ListBetPlanTableTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListBetPlanTableTypeclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListFrontEndProcessorSoapIn">
+    <wsdl:part name="parameters" element="tns:ListFrontEndProcessor" />
+  </wsdl:message>
+  <wsdl:message name="ListFrontEndProcessorSoapOut">
+    <wsdl:part name="parameters" element="tns:ListFrontEndProcessorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListFrontEndProcessorclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListBackEndProcessorSoapIn">
+    <wsdl:part name="parameters" element="tns:ListBackEndProcessor" />
+  </wsdl:message>
+  <wsdl:message name="ListBackEndProcessorSoapOut">
+    <wsdl:part name="parameters" element="tns:ListBackEndProcessorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListBackEndProcessorclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListSettlementBankSoapIn">
+    <wsdl:part name="parameters" element="tns:ListSettlementBank" />
+  </wsdl:message>
+  <wsdl:message name="ListSettlementBankSoapOut">
+    <wsdl:part name="parameters" element="tns:ListSettlementBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListSettlementBankclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListContractorSoapIn">
+    <wsdl:part name="parameters" element="tns:ListContractor" />
+  </wsdl:message>
+  <wsdl:message name="ListContractorSoapOut">
+    <wsdl:part name="parameters" element="tns:ListContractorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListContractorclsAuthenticationHeader">
+    <wsdl:part name="clsAuthenticationHeader" element="tns:clsAuthenticationHeader" />
+  </wsdl:message>
+  <wsdl:portType name="wsSalesCenterBoardingSoap">
+    <wsdl:operation name="CreateMerchantApplication">
+      <wsdl:input message="tns:CreateMerchantApplicationSoapIn" />
+      <wsdl:output message="tns:CreateMerchantApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMerchantApplication">
+      <wsdl:input message="tns:UpdateMerchantApplicationSoapIn" />
+      <wsdl:output message="tns:UpdateMerchantApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryMerchantApplication">
+      <wsdl:input message="tns:QueryMerchantApplicationSoapIn" />
+      <wsdl:output message="tns:QueryMerchantApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailMerchantApplication">
+      <wsdl:input message="tns:EmailMerchantApplicationSoapIn" />
+      <wsdl:output message="tns:EmailMerchantApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListMerchFee">
+      <wsdl:input message="tns:ListMerchFeeSoapIn" />
+      <wsdl:output message="tns:ListMerchFeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListProduct">
+      <wsdl:input message="tns:ListProductSoapIn" />
+      <wsdl:output message="tns:ListProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListState">
+      <wsdl:input message="tns:ListStateSoapIn" />
+      <wsdl:output message="tns:ListStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCountry">
+      <wsdl:input message="tns:ListCountrySoapIn" />
+      <wsdl:output message="tns:ListCountrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListUserBank">
+      <wsdl:input message="tns:ListUserBankSoapIn" />
+      <wsdl:output message="tns:ListUserBankSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAssociation">
+      <wsdl:input message="tns:ListAssociationSoapIn" />
+      <wsdl:output message="tns:ListAssociationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCorpType">
+      <wsdl:input message="tns:ListCorpTypeSoapIn" />
+      <wsdl:output message="tns:ListCorpTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListLeadSource">
+      <wsdl:input message="tns:ListLeadSourceSoapIn" />
+      <wsdl:output message="tns:ListLeadSourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListBusinessLevel">
+      <wsdl:input message="tns:ListBusinessLevelSoapIn" />
+      <wsdl:output message="tns:ListBusinessLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListReturnPolicy">
+      <wsdl:input message="tns:ListReturnPolicySoapIn" />
+      <wsdl:output message="tns:ListReturnPolicySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListDiscountPaid">
+      <wsdl:input message="tns:ListDiscountPaidSoapIn" />
+      <wsdl:output message="tns:ListDiscountPaidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListBetInterchangeType">
+      <wsdl:input message="tns:ListBetInterchangeTypeSoapIn" />
+      <wsdl:output message="tns:ListBetInterchangeTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListMerchTEStatus">
+      <wsdl:input message="tns:ListMerchTEStatusSoapIn" />
+      <wsdl:output message="tns:ListMerchTEStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCardType">
+      <wsdl:input message="tns:ListCardTypeSoapIn" />
+      <wsdl:output message="tns:ListCardTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListExpenseType">
+      <wsdl:input message="tns:ListExpenseTypeSoapIn" />
+      <wsdl:output message="tns:ListExpenseTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListBetPlanTableType">
+      <wsdl:input message="tns:ListBetPlanTableTypeSoapIn" />
+      <wsdl:output message="tns:ListBetPlanTableTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFrontEndProcessor">
+      <wsdl:input message="tns:ListFrontEndProcessorSoapIn" />
+      <wsdl:output message="tns:ListFrontEndProcessorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListBackEndProcessor">
+      <wsdl:input message="tns:ListBackEndProcessorSoapIn" />
+      <wsdl:output message="tns:ListBackEndProcessorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSettlementBank">
+      <wsdl:input message="tns:ListSettlementBankSoapIn" />
+      <wsdl:output message="tns:ListSettlementBankSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListContractor">
+      <wsdl:input message="tns:ListContractorSoapIn" />
+      <wsdl:output message="tns:ListContractorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsSalesCenterBoardingSoap" type="tns:wsSalesCenterBoardingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateMerchantApplication">
+      <soap:operation soapAction="wsSalesPortal/CreateMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CreateMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMerchantApplication">
+      <soap:operation soapAction="wsSalesPortal/UpdateMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMerchantApplication">
+      <soap:operation soapAction="wsSalesPortal/QueryMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:QueryMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailMerchantApplication">
+      <soap:operation soapAction="wsSalesPortal/EmailMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:EmailMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListMerchFee">
+      <soap:operation soapAction="wsSalesPortal/ListMerchFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListMerchFeeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProduct">
+      <soap:operation soapAction="wsSalesPortal/ListProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListProductclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListState">
+      <soap:operation soapAction="wsSalesPortal/ListState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListStateclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCountry">
+      <soap:operation soapAction="wsSalesPortal/ListCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListCountryclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListUserBank">
+      <soap:operation soapAction="wsSalesPortal/ListUserBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListUserBankclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAssociation">
+      <soap:operation soapAction="wsSalesPortal/ListAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListAssociationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCorpType">
+      <soap:operation soapAction="wsSalesPortal/ListCorpType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListCorpTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListLeadSource">
+      <soap:operation soapAction="wsSalesPortal/ListLeadSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListLeadSourceclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBusinessLevel">
+      <soap:operation soapAction="wsSalesPortal/ListBusinessLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListBusinessLevelclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListReturnPolicy">
+      <soap:operation soapAction="wsSalesPortal/ListReturnPolicy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListReturnPolicyclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDiscountPaid">
+      <soap:operation soapAction="wsSalesPortal/ListDiscountPaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListDiscountPaidclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBetInterchangeType">
+      <soap:operation soapAction="wsSalesPortal/ListBetInterchangeType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListBetInterchangeTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListMerchTEStatus">
+      <soap:operation soapAction="wsSalesPortal/ListMerchTEStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListMerchTEStatusclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCardType">
+      <soap:operation soapAction="wsSalesPortal/ListCardType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListCardTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListExpenseType">
+      <soap:operation soapAction="wsSalesPortal/ListExpenseType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListExpenseTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBetPlanTableType">
+      <soap:operation soapAction="wsSalesPortal/ListBetPlanTableType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListBetPlanTableTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFrontEndProcessor">
+      <soap:operation soapAction="wsSalesPortal/ListFrontEndProcessor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListFrontEndProcessorclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBackEndProcessor">
+      <soap:operation soapAction="wsSalesPortal/ListBackEndProcessor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListBackEndProcessorclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSettlementBank">
+      <soap:operation soapAction="wsSalesPortal/ListSettlementBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListSettlementBankclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContractor">
+      <soap:operation soapAction="wsSalesPortal/ListContractor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListContractorclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSalesCenterBoardingSoap12" type="tns:wsSalesCenterBoardingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateMerchantApplication">
+      <soap12:operation soapAction="wsSalesPortal/CreateMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CreateMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMerchantApplication">
+      <soap12:operation soapAction="wsSalesPortal/UpdateMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMerchantApplication">
+      <soap12:operation soapAction="wsSalesPortal/QueryMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:QueryMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailMerchantApplication">
+      <soap12:operation soapAction="wsSalesPortal/EmailMerchantApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:EmailMerchantApplicationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListMerchFee">
+      <soap12:operation soapAction="wsSalesPortal/ListMerchFee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListMerchFeeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProduct">
+      <soap12:operation soapAction="wsSalesPortal/ListProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListProductclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListState">
+      <soap12:operation soapAction="wsSalesPortal/ListState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListStateclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCountry">
+      <soap12:operation soapAction="wsSalesPortal/ListCountry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListCountryclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListUserBank">
+      <soap12:operation soapAction="wsSalesPortal/ListUserBank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListUserBankclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAssociation">
+      <soap12:operation soapAction="wsSalesPortal/ListAssociation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListAssociationclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCorpType">
+      <soap12:operation soapAction="wsSalesPortal/ListCorpType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListCorpTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListLeadSource">
+      <soap12:operation soapAction="wsSalesPortal/ListLeadSource" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListLeadSourceclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBusinessLevel">
+      <soap12:operation soapAction="wsSalesPortal/ListBusinessLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListBusinessLevelclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListReturnPolicy">
+      <soap12:operation soapAction="wsSalesPortal/ListReturnPolicy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListReturnPolicyclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDiscountPaid">
+      <soap12:operation soapAction="wsSalesPortal/ListDiscountPaid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListDiscountPaidclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBetInterchangeType">
+      <soap12:operation soapAction="wsSalesPortal/ListBetInterchangeType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListBetInterchangeTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListMerchTEStatus">
+      <soap12:operation soapAction="wsSalesPortal/ListMerchTEStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListMerchTEStatusclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCardType">
+      <soap12:operation soapAction="wsSalesPortal/ListCardType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListCardTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListExpenseType">
+      <soap12:operation soapAction="wsSalesPortal/ListExpenseType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListExpenseTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBetPlanTableType">
+      <soap12:operation soapAction="wsSalesPortal/ListBetPlanTableType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListBetPlanTableTypeclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFrontEndProcessor">
+      <soap12:operation soapAction="wsSalesPortal/ListFrontEndProcessor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListFrontEndProcessorclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListBackEndProcessor">
+      <soap12:operation soapAction="wsSalesPortal/ListBackEndProcessor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListBackEndProcessorclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSettlementBank">
+      <soap12:operation soapAction="wsSalesPortal/ListSettlementBank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListSettlementBankclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContractor">
+      <soap12:operation soapAction="wsSalesPortal/ListContractor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListContractorclsAuthenticationHeader" part="clsAuthenticationHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsSalesCenterBoarding">
+    <wsdl:port name="wsSalesCenterBoardingSoap" binding="tns:wsSalesCenterBoardingSoap">
+      <soap:address location="https://uno.eftsecure.net/wsSalesCenterBoarding/wsSalesCenterBoarding.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsSalesCenterBoardingSoap12" binding="tns:wsSalesCenterBoardingSoap12">
+      <soap12:address location="https://uno.eftsecure.net/wsSalesCenterBoarding/wsSalesCenterBoarding.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,29 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Employee.master.cs" Inherits="Admin_Employee"
+    MasterPageFile="~/Root.master" %>
+<asp:Content ID="AdminContent" ContentPlaceHolderID="RootContent" runat="server">
+    <asp:Menu ID="mnuAdminMain" runat="server" Orientation="Horizontal" BackColor="#F7F6F3"
+        DynamicHorizontalOffset="2" Font-Names="Arial" Font-Size="Small" ForeColor="#7C6F57"
+        StaticSubMenuIndent="8pt" StaticEnableDefaultPopOutImage="False" BorderStyle="None"
+        Width="100%" Style="text-align: center;">
+        <Items>
+            <asp:MenuItem Text="Payroll" Value="Payroll" NavigateUrl="~/Payroll/ResidualsAdmin.aspx"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="OnlineAppLeads.aspx" Text="View Leads" Value="Manage Leads"></asp:MenuItem>
+        </Items>            
+        <StaticMenuItemStyle Font-Size="8pt" HorizontalPadding="10px" VerticalPadding="3px"
+            BorderColor="Silver" />
+        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" CssClass="MenuCss" />
+        <DynamicMenuStyle BackColor="#F7F6F3" />
+        <StaticSelectedStyle BackColor="#5D7B9D" Font-Names="Arial" Font-Size="8pt" />
+        <DynamicSelectedStyle BackColor="#5D7B9D" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BorderColor="White"
+            BorderWidth="1px" />
+        <StaticItemTemplate>
+            <%# Eval("Text") %>
+        </StaticItemTemplate>
+        <StaticHoverStyle BackColor="#4D99E6" ForeColor="White" Font-Names="Arial" Font-Size="8pt"
+            CssClass="MenuCss" />
+        <StaticMenuStyle BorderColor="Gray" BorderWidth="1px" />
+    </asp:Menu>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

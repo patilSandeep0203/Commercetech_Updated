@@ -1,0 +1,14 @@
+bin\Debug\DLPartner.dll
+bin\Debug\DLPartner.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DLPartner.dll
+obj\Debug\DLPartner.pdb
+bin\Release\DLPartner.dll.config
+bin\Release\DLPartner.dll
+bin\Release\DLPartner.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DLPartner.dll
+obj\Release\DLPartner.pdb
+bin\Debug\DLPartner.dll.config
+bin\Release\DLPartner.XmlSerializers.dll
+obj\Release\DLPartner.XmlSerializers.dll

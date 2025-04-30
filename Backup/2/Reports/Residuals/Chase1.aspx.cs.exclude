@@ -1,0 +1,987 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using BusinessLayer;
+using DLPartner;
+using DLPartner.PartnerDSTableAdapters;
+
+public partial class Residuals_Chase : System.Web.UI.Page
+{
+    protected void Page_PreInit(object sender, EventArgs e)
+    {
+        if (!Session.IsNewSession)
+        {
+            if (User.IsInRole("Agent") || User.IsInRole("T1Agent"))
+                Page.MasterPageFile = "../Agent.master";
+            else if (User.IsInRole("Reseller") || User.IsInRole("Affiliate"))
+                Page.MasterPageFile = "../Agent.master";
+            else if (User.IsInRole("Employee"))
+                Page.MasterPageFile = "../Employee.master";
+            else if (User.IsInRole("Admin"))
+                Page.MasterPageFile = "../Admin.master";
+        }
+    }
+
+    void Page_Init(object sender, EventArgs e)
+    {
+        ViewStateUserKey = Session.SessionID;
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (Session.IsNewSession)
+            Response.Redirect("~/login.aspx");
+
+        if (!Page.IsPostBack)
+        {
+            if (!User.Identity.IsAuthenticated)
+                Response.Redirect("~/login.aspx?Authentication=False");
+            try
+            {
+                MonthBL mon = new MonthBL();
+
+                if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+                {
+                    DataSet dsMon = mon.GetMonthListForReports(1, "residuals");
+                    if (dsMon.Tables[0].Rows.Count > 0)
+                    {
+                        lstMonth.DataSource = dsMon;
+                        lstMonth.DataTextField = "Mon";
+                        lstMonth.DataValueField = "Mon";
+                        lstMonth.DataBind();
+                    }
+
+                    ListBL RepList = new ListBL();
+                    DataSet dsRep = RepList.GetRepListForVendor("chase");
+                    if (dsRep.Tables[0].Rows.Count > 0)
+                    {
+                        lstRepList.DataSource = dsRep;
+                        lstRepList.DataTextField = "RepName";
+                        lstRepList.DataValueField = "MasterNum";
+                        lstRepList.DataBind();
+                    }
+                    ListItem item = new ListItem();
+                    item.Text = "ALL";
+                    item.Value = "ALL";
+                    lstRepList.Items.Add(item);
+                    lstRepList.SelectedIndex = lstRepList.Items.IndexOf(item);
+
+                    string MasterNum = "";
+                    string Month = "";
+                    if (Request.Params.Get("Month") != null)
+                        Month = Request.Params.Get("Month");
+
+                    if (Request.Params.Get("MasterNum") != null)
+                        MasterNum = Request.Params.Get("MasterNum");
+
+                    if ((Month != "") && (MasterNum != "") && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+                    {
+                        try
+                        {
+                            lblError.Visible = false;
+                            lstMonth.SelectedValue = lstMonth.Items.FindByValue(Month).Value;
+                            lblError.Visible = false;
+                            lblMonth.Text = "Chase Residuals for the month of " + lstMonth.SelectedItem.Text;
+                            if (lstRepList.Items.FindByValue(MasterNum) != null)
+                                lstRepList.SelectedValue = MasterNum;
+                            Populate(MasterNum, Month);
+                        }
+                        catch (Exception err)
+                        {
+                            CreateLog Log = new CreateLog();
+                            Log.ErrorLog(Server.MapPath("~/ErrorLog"), err.Message);
+                            DisplayMessage("Error Processing Request. Please contact technical support");
+                        }
+                    }//end if month not null
+
+                }//end if
+                else
+                {
+  
+                    DataSet dsMon = mon.GetMonthListForReports(2, "residuals");
+                    if (dsMon.Tables[0].Rows.Count > 0)
+                    {
+                        lstMonth.DataSource = dsMon;
+                        lstMonth.DataTextField = "Mon";
+                        lstMonth.DataValueField = "Mon";
+                        lstMonth.DataBind();
+                    }
+
+                    lstRepList.Visible = false;
+                    lblSelectRepName.Visible = false;
+                }
+            }//end try
+            catch (Exception)
+            {
+                DisplayMessage("Error Processing Request. Please contact technical support");
+            }
+        }//end if not postback
+    }//end page load
+
+    //This function populates Chase residuals
+    public void Populate(string MasterNum, string Month)
+    {
+        Style ValueLabel = new Style();
+        ValueLabel.ForeColor = System.Drawing.Color.Black;
+        ValueLabel.Font.Size = FontUnit.Point(8);
+        ValueLabel.Font.Name = "Arial";
+
+        Style ValueLabelHeader = new Style();
+        ValueLabelHeader.ForeColor = System.Drawing.Color.White;
+        ValueLabelHeader.Font.Size = FontUnit.Small;
+        ValueLabelHeader.Font.Bold = true;
+        ValueLabelHeader.Font.Name = "Arial";
+
+        Style sHyperLink = new Style();
+        sHyperLink.Font.Bold = true;
+        sHyperLink.Font.Size = FontUnit.Point(8);
+        sHyperLink.Font.Name = "Arial";
+
+        ResidualsBL Residuals = new ResidualsBL(Month, MasterNum);
+        DataSet dsTotals = Residuals.GetChaseTotals();
+
+        double ECETotal = 0;
+        double RepTotal = 0;
+        double T1RepTotal = 0;
+        if (dsTotals.Tables[0].Rows.Count > 0)
+        {
+            DataRow dr = dsTotals.Tables[0].Rows[0];
+            ECETotal = Convert.ToDouble(dr["Chaseecetotal"]);
+            RepTotal = Convert.ToDouble(dr["Chasereptotal"]);
+        }//end if count not 0
+
+        PartnerDS.ChaseDataTable dt = Residuals.GetChaseResiduals();
+
+        //The number of columns to actually display (do not display the last 6)
+        int numColDisplay = dt.Columns.Count - 6;
+
+        if (dt.Rows.Count > 0)
+        {
+            TableRow tr = new TableRow();
+            TableCell td = new TableCell();
+
+            Label lblValue;
+
+            #region Header Row
+
+            tr = new TableRow();
+            tr.BackColor = System.Drawing.Color.FromArgb(93, 123, 157);
+            td = new TableCell();
+            td.Text = "";
+            td.Style["font-family"] = "Arial";
+            td.Style["font-size"] = "9px";
+            td.Style["font-weight"] = "Bold";
+            td.Style["Color"] = "White";
+            tr.Cells.Add(td);
+
+            for (int i = 0; i < numColDisplay; i++)
+            {
+                DataColumn dc = dt.Columns[i];
+                td = new TableCell();
+                td.Text = dc.ColumnName;
+                td.Style["font-family"] = "Arial";
+                td.Style["font-size"] = "9px";
+                td.Style["font-weight"] = "Bold";
+                td.Style["Color"] = "White";
+                tr.Cells.Add(td);
+            }
+
+            tblResiduals.Rows.Add(tr);
+
+            #endregion
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                tr = new TableRow();
+
+                //RepName
+                lblValue = new Label();
+                if (MasterNum == "ALL")
+                    lblValue.Text = dt[i].RepName.ToString().Trim();
+                else
+                    lblValue.Text = "";
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                lblValue.Font.Bold = true;
+                tr.Cells.Add(td);
+
+                //MerchantNumber
+                lblValue = new Label();
+                lblValue.Text = dt[i].Merchant_Number.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DBA
+                lblValue = new Label();
+                lblValue.Text = dt[i].DBA.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCPlanCode
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Plan_Code.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCCreditRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Credit_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCCreditVolume
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Credit_Volume.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCCreditRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Credit_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCInterchangeRate
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Interchange_Rate.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCTxnRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Txn_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCTxnVol
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Txn_Vol.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCTxnRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Txn_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitVolume
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Volume.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitDiscountRate
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Discount_Rate.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitTxnRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Txn_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitTxnVol
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Txn_Vol.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCDebitTxnRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Debit_Txn_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCAuthRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Auth_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCAccessFeeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Access_Fee_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCAccessRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Access_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MCCaptureRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].MC_Capture_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaPlanCode
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Plan_Code.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaCreditRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Credit_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaCreditVolume
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Credit_Volume.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaCreditRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Credit_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaInterchangeRate
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Interchange_Rate.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaTxnFeeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Txn_Fee_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaTxnVol
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Txn_Vol.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaTxnRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Txn_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitVolume
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Volume.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitDiscountRate
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Discount_Rate.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitTxnRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Txn_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitTxnVol
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Txn_Vol.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaDebitTxnRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Debit_Txn_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaAuthRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Auth_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaAccessFeeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Access_Fee_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaAccessFee
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Access_Fee.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //VisaCaptureRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Visa_Capture_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //TierIIWholesale
+                lblValue = new Label();
+                lblValue.Text = dt[i].Tier_II_Wholesale.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MonthlyDiscountWholesale
+                lblValue = new Label();
+                lblValue.Text = dt[i].Monthly_Discount_Wholesale.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DebitTxnFeeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Debit_Txn_Fee_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AmexRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Amex_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AmexCaptureRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Amex_Capture_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AmexAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Amex_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DiscoverRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Discover_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DiscoverCaptureRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Discover_Capture_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DiscoverAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Discover_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DinersCaptureRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Diners_Capture_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //DinersAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Diners_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //JCBDiscoverCaptureRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].JCB_Discover_Capture_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //JCBAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].JCB_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //EBTAuthRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].EBT_Auth_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AnnualMembershipRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Annual_Membership_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+                
+                //AnnualMembershipRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Annaul_Membership_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //ChargebackFeeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Chargeback_Fee_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AVSFeeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].AVS_Fee_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AVSWatsRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].AVS_Wats_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AVSLocalRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].AVS_Local_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MinProcFeeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Min_Proc_Fee_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MinProcRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Min_Proc_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MonthlyInactivityRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Monthly_Inactivity_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MonthlyInactivityRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Monthly_Inactivity_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //StatementFeeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Statement_Fee_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //StatementFeeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Statement_Fee_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MonthlyServiceChargeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Monthly_Service_Charge_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MonthlyServiceChargeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Monthly_Service_Charge_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //ACHFeeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].ACH_Fee_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //ACHFeeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].ACH_Fee_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MyMerchantViewRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].My_Merchant_View_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //MyMerchantViewRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].My_Merchant_View_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //BillbackSurchargeRetail
+                lblValue = new Label();
+                lblValue.Text = dt[i].Billback_Surcharge_Retail.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //BillbackSurchargeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Billback_Surcharge_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //AppFeeRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].App_Fee_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //TotalRevenue
+                lblValue = new Label();
+                lblValue.Text = dt[i].Total_Revenue.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //BankSplit
+                lblValue = new Label();
+                lblValue.Text = dt[i].Bank_Split.ToString().Trim() + '%';
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //EceTotal
+                lblValue = new Label();
+                lblValue.Text = dt[i].EceTotal.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //RepSplit
+                lblValue = new Label();
+                lblValue.Text = dt[i].RepSplit.ToString().Trim() + '%';
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //RepTotal
+                lblValue = new Label();
+                lblValue.Text = dt[i].RepTotal.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+                
+                //TierSplit
+                lblValue = new Label();
+                lblValue.Text = dt[i].TierSplit.ToString().Trim() + '%';
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                //TierTotal
+                lblValue = new Label();
+                lblValue.Text = dt[i].TierTotal.ToString().Trim();
+                td = new TableCell();
+                lblValue.ApplyStyle(ValueLabel);
+                td.Controls.Add(lblValue);
+                tr.Cells.Add(td);
+
+                /*
+                for (int j = 0; j < numColDisplay; j++)
+                {
+                    lblValue = new Label();
+                    lblValue.Text = dt[i].Table.Columns[j].ToString().Trim();
+
+                    td = new TableCell();
+                    lblValue.ApplyStyle(ValueLabel);
+                    td.Controls.Add(lblValue);
+                    tr.Cells.Add(td);
+                }
+                */
+
+                if (i % 2 == 0)
+                    tr.BackColor = System.Drawing.Color.WhiteSmoke;
+                tblResiduals.Rows.Add(tr);
+
+                //Sum up the Tier Total
+                T1RepTotal += Convert.ToDouble(dt[i].TierTotal);
+            }//end for
+
+            tr = new TableRow();
+            td = new TableCell();
+            td.Attributes.Add("colspan", Convert.ToString(numColDisplay - 5));
+            tr.Cells.Add(td);
+
+            lblValue = new Label();
+            lblValue.Text = "Total";
+            td = new TableCell();
+            lblValue.ApplyStyle(ValueLabel);
+            lblValue.Font.Bold = true;
+            td.Controls.Add(lblValue);
+            tr.Cells.Add(td);
+
+            lblValue = new Label();
+            lblValue.Text = "$" + ECETotal.ToString();
+            td = new TableCell();
+            lblValue.ApplyStyle(ValueLabel);
+            lblValue.Font.Bold = true;
+            td.Controls.Add(lblValue);
+            tr.Cells.Add(td);
+
+            td = new TableCell();
+            tr.Cells.Add(td); 
+                        
+
+            lblValue = new Label();
+            lblValue.Text = "$" + RepTotal.ToString();
+            td = new TableCell();
+            lblValue.ApplyStyle(ValueLabel);
+            lblValue.Font.Bold = true;
+            td.Controls.Add(lblValue);
+            tr.Cells.Add(td);
+            
+            td = new TableCell();
+            tr.Cells.Add(td);
+
+            lblValue = new Label();
+            lblValue.Text = "$" + T1RepTotal.ToString();
+            td = new TableCell();
+            lblValue.ApplyStyle(ValueLabel);
+            lblValue.Font.Bold = true;
+            td.Controls.Add(lblValue);
+            tr.Cells.Add(td);
+
+            tr.BackColor = System.Drawing.Color.WhiteSmoke;
+            tblResiduals.Rows.Add(tr);
+        }//end if count not 0
+        else
+            DisplayMessage("No Records found for this month");
+    }//end function Populate
+
+    protected void btnSubmit_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string Rep = Session["MasterNum"].ToString();
+            //if the Rep List is visible, set the Rep to be searched
+            if (lstRepList.Visible == true)
+                Rep = lstRepList.SelectedValue;
+            lblError.Visible = false;
+            lblMonth.Text = "Chase Residuals for the month of: " + lstMonth.SelectedItem.Text;
+            Populate(Rep, lstMonth.SelectedItem.Value.ToString().Trim());
+        }//end try
+        catch (Exception err)
+        {
+            CreateLog Log = new CreateLog();
+            Log.ErrorLog(Server.MapPath("~/ErrorLog"), err.Message);
+            DisplayMessage("Error Processing Request. Please contact technical support");
+        }
+    }
+
+    //This function displays error message on a label
+    protected void DisplayMessage(string errText)
+    {
+        lblError.Visible = true;
+        lblError.Text = errText;
+    }//end function set error message
+
+}

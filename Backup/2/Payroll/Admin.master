@@ -1,0 +1,46 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Payroll_Admin" MasterPageFile="~/Root.master" %>
+<asp:Content ID="AdminContent" ContentPlaceHolderID="RootContent" runat="server">
+    <asp:Menu ID="mnuAdminMain" runat="server" Orientation="Horizontal" BackColor="#F7F6F3"
+        DynamicHorizontalOffset="2" Font-Names="Arial" Font-Size="8pt" ForeColor="#7C6F57"
+        StaticSubMenuIndent="8pt" StaticEnableDefaultPopOutImage="False" BorderStyle="None"
+        Width="100%" Style="text-align: center;">
+        <DynamicMenuStyle CssClass="IE"/>
+        <Items>
+        <asp:MenuItem Value="Residuals" Selectable="false">
+           <asp:MenuItem NavigateUrl="ResidualsAdmin.aspx" Text="Residuals Report" Value="Residuals">
+           </asp:MenuItem>
+           <asp:MenuItem NavigateUrl="ResdPayment.aspx" Text="Residual Payments" Value="Residual Summary">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="ActResiduals.aspx" Text="Act Residuals" Value="Act Residuals">
+            </asp:MenuItem>
+        </asp:MenuItem>
+        <asp:MenuItem Text="Commissions" Value="Commissions" Selectable="false">
+            <asp:MenuItem NavigateUrl="CommAdmin.aspx" Text="Commissions Report" Value="Commissions Report">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="CommRefPayment.aspx" Text="Commission Payments" Value="Payment Summary">
+            </asp:MenuItem>
+        </asp:MenuItem>
+        <asp:MenuItem Text="Payment" Value="Payment" Selectable="false">
+            <asp:MenuItem NavigateUrl="~/Payroll/ResdCommPayment.aspx" Text="Payment Summary" Value="Payment Summary">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/Payroll/ResdCommPaymentHistory.aspx" Text="Payment History" Value="Payment History">
+            </asp:MenuItem>
+        </asp:MenuItem>        
+        <asp:MenuItem NavigateUrl="ReferralsAdmin.aspx" Text="Referrals" Value="Referrals">
+        </asp:MenuItem>
+        </Items>
+        <StaticMenuItemStyle Font-Size="8pt" HorizontalPadding="10px" VerticalPadding="3px" BorderColor="Silver" />
+        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" CssClass="MenuCss" />
+        <DynamicMenuStyle BackColor="#F7F6F3" Font-Size="8pt" />
+        <StaticSelectedStyle BackColor="#5D7B9D" Font-Names="Arial" Font-Size="8pt" />
+        <DynamicSelectedStyle BackColor="#5D7B9D" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BorderColor="Silver" BorderWidth="1px" />
+        <StaticItemTemplate>
+            <%# Eval("Text") %>
+        </StaticItemTemplate>
+        <StaticHoverStyle BackColor="#4D99E6" ForeColor="White" Font-Names="Arial" Font-Size="8pt" CssClass="MenuCss" />
+        <StaticMenuStyle BorderColor="Gray" BorderWidth="1px" />
+    </asp:Menu>
+    <asp:contentplaceholder id="MainContent" runat="server">
+    </asp:contentplaceholder>
+</asp:Content>

@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Root.master.cs" Inherits="Root" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var cot_loc0=(window.location.protocol == "https:")? "https://secure.comodo.net/trustlogo/javascript/cot.js" :
+"http://www.trustlogo.com/trustlogo/javascript/cot.js";
+document.writeln('<scr' + 'ipt language="JavaScript" src="'+cot_loc0+'" type="text\/javascript">' + '<\/scr' + 'ipt>');
+//]]>
+</script>
+<head id="Head1" runat="server">
+    <title>E-Commerce Exchange - Online Application</title>
+
+<meta http-equiv=”X-UA-Compatible” content=”IE=8″ />
+
+    
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >-->
+    <!--<link href="GStyle.css" type="text/css" rel="stylesheet" />-->
+    <link href="partnercss.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" language="javascript">
+    function popupHelp(page, id)
+    {        
+        strURL = page + "#" + id;
+        pop = window.open(strURL, 'rates','width=750,height=600,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes');
+    }
+    </script>
+</head>
+<a href="http://www.instantssl.com" id="comodoTL">SSL</a>
+<script language="JavaScript" type="text/javascript">
+COT("https://www.firstaffiliates.com/images/secure_site.gif", "SC2", "none");
+</script>
+<body topmargin="0" class="BodyBackground">
+    <center>
+        <form id="form1" runat="server">
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 900px;">
+                <tr style="background-image: url('/Partner/Images/fillertop.gif'); background-repeat: repeat-x">
+                    <td align="right" style="width:53%">
+                        <asp:Image ID="imgMainBanner" ImageUrl="~/Images/MainBanner.gif" runat="server" />
+                    </td>
+                    <td align="center" style="width:8%">
+                        <asp:HyperLink NavigateUrl="Contact.aspx" runat="server" CssClass="RootLink" Text="Contact Us" Value="Contact Us"></asp:HyperLink>
+                    </td>
+                    <td align="center" style="width:8%">
+                        <asp:HyperLink NavigateUrl="logout.aspx" runat="server" CssClass="RootLink" Text="Logout" Value="Logout"></asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" style="background-color: black; " valign="top">
+                        <asp:Menu ID="mnuMain" runat="server" Orientation="Horizontal" Style="background-image:url('/Partner/Images/topmain.gif');text-align:center"
+                            DynamicHorizontalOffset="2" Font-Names="Arial" Font-Size="8pt" ForeColor="White"
+                            StaticSubMenuIndent="10px" StaticEnableDefaultPopOutImage="False" BorderStyle="None"
+                            Width="100%" CssClass="MenuCss" >
+                            <Items>
+                                <asp:MenuItem NavigateUrl="Home.aspx" Text="Home" Value="Home" ImageUrl="~/Images/toplogin.gif">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Online Applications" Value="Online Applications" NavigateUrl="OnlineAppMgmt/default.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Reports"  Value="Reports" NavigateUrl="Reports/CTCReports.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Miscellaneous" Value="Miscellaneous" NavigateUrl="Misc.aspx"></asp:MenuItem>
+
+                            </Items>
+                            <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="3px" BorderColor="Silver" CssClass="MenuCss"/>
+                            <DynamicHoverStyle BackColor="#8BB8EB" ForeColor="White" CssClass="MenuCss" />
+                            <DynamicMenuStyle BackColor="#3069A5" Font-Size="8pt" />
+                            <StaticSelectedStyle BackColor="Red" Font-Names="Arial" Font-Size="8pt" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BorderColor="White"
+                                BorderWidth="1px" />
+                            <StaticItemTemplate>
+                                <%# Eval("Text") %>
+                            </StaticItemTemplate>
+                            <StaticHoverStyle ForeColor="White" Font-Names="Arial" Font-Size="8pt"
+                                CssClass="MenuCss" />
+                            <StaticMenuStyle BorderColor="Gray" BorderWidth="1px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" colspan="3">
+                        <table style="height: 500px; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center"  valign="top" style="background-color: white;">
+                                    <asp:ContentPlaceHolder ID="RootContent" runat="server">
+                                        <!-- INSERT MAIN CONTENT BELOW -->
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" class="FooterBackground">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <span class="MenuHeader">&nbsp;|&nbsp;</span>
+                                </td>
+                                <td align="center">
+                                    <asp:HyperLink ID="lnkFeedback" ForeColor="White" CssClass="MenuCss" runat="server"  NavigateUrl="mailto:support@ecenow.com?subject=Technical Support">Feedback</asp:HyperLink>
+                                </td>
+                                
+                                <td>
+                                    <span class="MenuHeader">&nbsp;|&nbsp;</span>
+                                </td>
+                                <td align="center">
+                                    <asp:HyperLink ID="lnkContact" ForeColor="White" CssClass="MenuCss" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
+                                </td>
+                                <td>
+                                    <span class="MenuHeader">&nbsp;|&nbsp;</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

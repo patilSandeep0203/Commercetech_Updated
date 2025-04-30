@@ -1,0 +1,5 @@
+<ApplicationRequest xmlns="http://ipaymentinc.com/MerchantApplications/20110105">
+  <Action></Action>
+  <ApplicationXml>
+  </ApplicationXml>
+</ApplicationRequest>

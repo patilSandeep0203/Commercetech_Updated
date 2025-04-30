@@ -1,0 +1,15 @@
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Debug\DLPartner.dll.config
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Debug\DLPartner.dll
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Debug\DLPartner.pdb
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Debug\DLPartner.dll
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Debug\DLPartner.pdb
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Debug\Interop.Outlook.dll
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.dll.config
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.dll
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\bin\Release\DLPartner.pdb
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.dll
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.pdb
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\Partner\DataLayer\obj\Release\DLPartner.XmlSerializers.dll

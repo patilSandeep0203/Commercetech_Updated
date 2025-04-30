@@ -1,0 +1,15 @@
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Debug\DLPartner.dll.config
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Debug\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\bin\Debug\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\obj\Debug\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\DataLayer\obj\Debug\DLPartner.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\bin\Debug\Properties\Settings.Designer.cs
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\bin\Debug\Properties\AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\bin\Debug\Properties\Settings.settings
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\bin\Debug\DLPartner.dll.config
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\bin\Debug\DLPartner.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\bin\Debug\DLPartner.pdb
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\obj\Debug\DLPartner.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\obj\Debug\DLPartner.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\obj\Debug\DLPartner.dll
+C:\Users\Lenovo\Downloads\commercetech-ASP-live-main\Projects\Partner\DataLayer\obj\Debug\DLPartner.pdb

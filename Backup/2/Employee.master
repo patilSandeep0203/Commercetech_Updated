@@ -1,0 +1,36 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Employee.master.cs" Inherits="Employee" MasterPageFile="~/Root.master" %>
+<asp:Content ID="AdminContent" ContentPlaceHolderID="RootContent" runat="server">
+    <asp:Menu ID="mnuAdminMain" runat="server" Orientation="Horizontal" BackColor="#F7F6F3"
+        DynamicHorizontalOffset="2" Font-Names="Arial" Font-Size="Small" ForeColor="#7C6F57"
+        StaticSubMenuIndent="8pt" StaticEnableDefaultPopOutImage="False" BorderStyle="None"
+        Width="100%" Style="text-align: center;">
+        <Items>
+           <asp:MenuItem Text="Admin" Value="Admin" NavigateUrl="Admin/OnlineAppLeads.aspx"></asp:MenuItem>
+           <asp:MenuItem Text="Manage Partners" Value="Manage Partners" NavigateUrl="ManagePartners.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="ACT! Features" Value="ACT! Features" NavigateUrl="ACT/CreateACTPDF.aspx"></asp:MenuItem>            
+            <asp:MenuItem NavigateUrl="BuildBanners.aspx" Text="Build Banners" Value="Build Banners">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="BuildTextLinks.aspx" Text="Build Text Links" Value="Build Text Links">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="cog.aspx" Text="Item List" Value="Item List">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="DocsLogins.aspx" Text="Documents And Logins" Value="Documents And Logins">
+            </asp:MenuItem>
+        </Items>
+        <StaticMenuItemStyle Font-Size="8pt" HorizontalPadding="10px" VerticalPadding="3px" BorderColor="Silver" />
+        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" CssClass="MenuCss" />
+        <DynamicMenuStyle BackColor="#F7F6F3" />
+        <StaticSelectedStyle BackColor="#5D7B9D" Font-Names="Arial" Font-Size="8pt" />
+        <DynamicSelectedStyle BackColor="#5D7B9D" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BorderColor="White"
+            BorderWidth="1px" />
+        <StaticItemTemplate>
+            <%# Eval("Text") %>
+        </StaticItemTemplate>
+        <StaticHoverStyle BackColor="#4D99E6" ForeColor="White" Font-Names="Arial" Font-Size="8pt" CssClass="MenuCss" />
+        <StaticMenuStyle BorderColor="Gray" BorderWidth="1px" />
+    </asp:Menu>
+    <asp:contentplaceholder id="MainContent" runat="server">
+    </asp:contentplaceholder>
+</asp:Content>
+

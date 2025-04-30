@@ -1,0 +1,28 @@
+    <iPaymentApplication xmlns="http://www.ipaymentinc.com" Stamp="IPI0608">
+      <ExtendedInfo></ExtendedInfo>
+    <BusinessInfo></BusinessInfo>
+    <SalesBreakDown></SalesBreakDown>
+    <PrincipalCollection>
+      <Principal></Principal>
+    </PrincipalCollection>
+    <ReferenceCollection/>
+    <Fees>
+    </Fees>
+    <Equipment>
+    </Equipment>
+    <LeaseInfo></LeaseInfo>
+      <Terminals xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <Gateways xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+      <Softwares xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+      <ExistingMerchant id="-1">
+    </ExistingMerchant>
+    <Amex></Amex>
+    <Discover></Discover>
+      <BankInformation id="-1"></BankInformation>
+      <SiteSurvey id="-1"></SiteSurvey>
+      <ServiceEnrollment ID="-1"></ServiceEnrollment>
+    <CardAcceptance ID="-1"></CardAcceptance>
+    <SalesRepInfo ID="-1"></SalesRepInfo>
+    <ApplicationMetadata>
+    </ApplicationMetadata>
+  </iPaymentApplication>

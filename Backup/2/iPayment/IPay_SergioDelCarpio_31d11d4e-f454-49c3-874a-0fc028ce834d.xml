@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<OnlineApp xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+  <Header>
+    <Status>ECX Digital App</Status>
+    <AttachedFileName>
+    </AttachedFileName>
+  </Header>
+  <AppData>
+    <UserDefinedAttributes>
+      <Att01>
+      </Att01>
+    </UserDefinedAttributes>
+    <GeneralInformation>
+      <BusName>DC Marketing USA LLC</BusName>
+      <DBA>DC Marketing USA</DBA>
+      <BusAddr>
+        <st_name>2038 Cermak Rd. 1st Floor</st_name>
+        <city>Chicago</city>
+        <state>IL</state>
+        <country>United States</country>
+        <zip>60608</zip>
+      </BusAddr>
+      <MailAddr>
+        <st_name>7143 West Niles Ave </st_name>
+        <city>Niles</city>
+        <state>IL</state>
+        <country>United States</country>
+        <zip>60714</zip>
+      </MailAddr>
+      <LOS>0</LOS>
+      <FedTaxId>273409889</FedTaxId>
+      <BusPhone>312-878-7610</BusPhone>
+      <BusFax>
+      </BusFax>
+      <CustPhone>
+      </CustPhone>
+      <ContactName>Sergio Del Carpio</ContactName>
+      <NumLocs>1</NumLocs>
+      <LOB>0</LOB>
+      <BusHrs>24/7</BusHrs>
+      <email>serdelcarpio@hotmail.com</email>
+      <url>cocinaolympia.com</url>
+    </GeneralInformation>
+    <BusinessInformation>
+      <RetailCardSwipe>0</RetailCardSwipe>
+      <RetailManuallyKeyed>30</RetailManuallyKeyed>
+      <Internet>0</Internet>
+      <Moto>70</Moto>
+      <OwnershipType>LLC</OwnershipType>
+      <CustRefundPol>Refund within 30 days</CustRefundPol>
+      <BusType>
+      </BusType>
+      <ProdType>Cookware sets</ProdType>
+      <DelTime>3</DelTime>
+      <Comments>One to three days delivery</Comments>
+    </BusinessInformation>
+    <ProcHistory>
+      <EverProcessed>0</EverProcessed>
+      <EverTerminated>0</EverTerminated>
+    </ProcHistory>
+    <Principal>
+      <FirstName>Sergio</FirstName>
+      <LastName>Del Carpio</LastName>
+      <SSN>962747642</SSN>
+      <PercentOwnership>100</PercentOwnership>
+      <Title>
+      </Title>
+      <Address>
+        <st_name>7143 West Niles Ave </st_name>
+        <city>Niles</city>
+        <state>IL</state>
+        <country>United States</country>
+        <zip>60714</zip>
+      </Address>
+      <AddrType>Own</AddrType>
+      <LOS>84</LOS>
+      <Phone>847-470-0463</Phone>
+      <DOB>03/09/1967</DOB>
+      <LicNum>D426-7866-7089-05</LicNum>
+      <LicState>WI</LicState>
+    </Principal>
+    <RepInfo>
+      <RepName>Jay Scott</RepName>
+      <RepNum>02733-001</RepNum>
+    </RepInfo>
+    <CardBasedFees>
+      <CardFee>
+        <CardType>1</CardType>
+        <CardPresent>
+          <DiscFee>2.15</DiscFee>
+          <MidQualFee>2.78</MidQualFee>
+          <NonQualFee>3.20</NonQualFee>
+        </CardPresent>
+        <TransFee>0.29</TransFee>
+        <WattsSurchrg>
+        </WattsSurchrg>
+        <AVS>0.10</AVS>
+        <VoiceAuth>0.95</VoiceAuth>
+        <ARU>0</ARU>
+      </CardFee>
+    </CardBasedFees>
+    <AgentValues>
+      <MonthlyStatementFee>10.00</MonthlyStatementFee>
+      <MonthlyMinDiscFee>15.00</MonthlyMinDiscFee>
+      <ApplicationFee>
+      </ApplicationFee>
+      <SetupFee>
+      </SetupFee>
+      <BatchHeaders>0.29</BatchHeaders>
+      <ExternalGWFee>10.00</ExternalGWFee>
+      <WirelessFee>
+      </WirelessFee>
+    </AgentValues>
+    <MiscAgentValues>
+      <MonthlyProcLimit>5000</MonthlyProcLimit>
+      <AvgTicket>150</AvgTicket>
+      <NeedAmex>0</NeedAmex>
+      <NeedDiscover>0</NeedDiscover>
+    </MiscAgentValues>
+    <Equipment>
+      <EquipType>G</EquipType>
+      <EquipModel>Others</EquipModel>
+      <EquipID>
+      </EquipID>
+    </Equipment>
+    <CardNums>
+      <AMEX>
+      </AMEX>
+      <Discover>
+      </Discover>
+      <Jcb>
+      </Jcb>
+    </CardNums>
+    <BankInfo>
+      <BankName>Chase Bank</BankName>
+      <BankAddr>2228 S. Western Ave.</BankAddr>
+      <TransroutingNum>071000013</TransroutingNum>
+      <DDA>904314440</DDA>
+    </BankInfo>
+  </AppData>
+</OnlineApp>

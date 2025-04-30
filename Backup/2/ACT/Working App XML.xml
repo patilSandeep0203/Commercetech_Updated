@@ -1,0 +1,84 @@
+<ApplicationRequest xmlns="http://ipaymentinc.com/MerchantApplications/20110105">
+	<Action>Validate</Action>
+	<ApplicationXml>
+    <![CDATA[
+    <iPaymentApplication xmlns="http://www.ipaymentinc.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+      <ExtendedInfo salesNumber="02733" salesName="Jay Scott" salesPhone="800-477-5363" salesID="86803" FormID="1306" Version="0212.2">
+      </ExtendedInfo>
+      <BusinessInfo legalBusinessName="Test - E-Commerce Exchange" doingBusinessAs="e-commerce exchange" address="909 N. Sepulveda blvd " address2="" city="El Segundo" state="CA" zip="90245" county="Canada" monthsAtAddress="0" yearsAtAddress="1" mainPhone="310-321-5400" customerServicePhone="800-477-5363" mainFaxPhone="310-310-3100" contactFirstName="Jimmy" contactLastName="Black" numberOfLocations="1" yearsInBusiness="1" monthsInBusiness="9" businessHours="8 am to 5 pm" mainEmailAddress="support@ecenow.com" mainWebSite="ecenow.com" mailingAddress="525 Wilshire " mailingAddress2="" mailingAddressCity="Los Angeles" mailingAddressState="AK" mailingAddressZip="33333" federalTaxID="123456789" merchantType="" ownershipType="Corporation" businessLocationType="" businessLocationTypeComment="" productsType="test  &amp; test  @$%^" methodsOfMarketingType="" refundPolicy="0" productDeliveryInDays="2" productDeliveryComments="test" appliedBefore="true" appliedBeforePriorProcessor="abc" previousMerchantNumbers="1111111111111111" creditCardProcessorPriorClosureWhom="abc" creditCardProcessorPriorClosure="false" creditCardProcessorPriorClosureExplaination="better rates" openDateYear="2011" openDateMonth="0" lengthOfOwnership="1" locationNumber="1" b2BPercent="0" IsB2B="" IsVendorFulfillmentHouse="" VFHName="" VFHAddress1="" VFHAddress2="" VFHCity="" VFHState="" VFHZip="" VFHPhone="" UsesThirdPartyData="" TPDName="" TPDAddress1="" TPDAddress2="" TPDCity="" TPDState="" TPDZip="" TPDPhone="" TPDSoftware="" ReturnPolicy="0" ReturnPolicyComment="test" Days2Deliver="2" DeliveryStartDate="" DeliveryComments="" RunCreditReport="" creditReportComments="" Portfolio="IPI" AppVersion="0212.2">
+      </BusinessInfo>
+      <SalesBreakDown retailSwipePercentage="100" retailKeyedPercentage="0" internetPercentage="0" mailOrderPercentage="0">
+      </SalesBreakDown>
+      <PrincipalCollection>
+        <Principal number="1" firstName="Jimmy" lastName="Black" socialSecurityNumber="123456789" ownershipPercentage="33" title="El Presidente" residentialAddress="909 N. Sepulveda blvd " residentialAddress2="123" isRented="false" city="Los Angeles" state="CA  " zip="33333" email="support@ecenow.com" howLongAtAddress="36" homePhone="321-321-6545" dateOfBirth="03/01/2001" driversLicenseNumber="45454" driversLicenseState="WY">
+        </Principal>
+      </PrincipalCollection>
+      <ReferenceCollection>
+        <Reference type="" number="" name="" accountNumber="" phone="" contact="">
+        </Reference>
+      </ReferenceCollection>
+      <Fees monthlyProcessingLimit="1000" monthlyAverageTicket="50" monthlyMinimumDiscountFee="20.00" monthlyHighTicket="600" aVSFee="0.02" aCHReturnItemFee="25.00" aCHChangeFee="25.00" retrievalRequestFee="20.00" chargebackFee="20.00" overLimitFee="0.00" useDiscountInterchange="False" creditCardDiscountQualifiedFee="1.59" creditCardDiscountMidQualifiedFee="2.59" creditCardDiscountNonQualifiedFee="3.59" debitDiscountQualifiedFee="1.09" debitDiscountMidQualifiedFee="2.59" debitDiscountNonQualifiedFee="3.59" voiceAuthFee="0.95" annualFee="75.00" reserveAccountFee="2.50" debitCardAccessFee="10.00" debitTransactionFee="10.00" WirelessSetupFee="35.00" WirelessMonthlyFee="10.00" WirelessPerAuthFee="10.00" PaymentGatewaySetupFee="25.00" PaymentGatewayMonthlyFee="10.00" PaymentGatewayPerAuthFee="0.10" customerService="10.00" tAndEAuth="" monthlyOnlineView="" batchClosure="" debitCardMonthlyNetworkGateway="" eBTTransaction="" e-Commerce="" onlineAccessSingle="" onlineAccessChain="" MCC_SIC="" iAccess="true" iAccessFee="0.00" MerchantOrPremierClub="" InterchangePlus="" VisaMCTransactionFee="0.21" TnETransactionFee="0.21" SetupFee="0.00" MonthlyAccessFee="10.00" PerAuthFee="0.21" HighRiskFee="0.25" RetailMerchantAnualFee="" NonRetailMerchantAnualFee="75.00" PlusDuesAndAssessments="" WexVoyagerTranFee="" ErrRate="" ERRTransactionFee="">
+      </Fees>
+      <Equipment terminalType="1" terminalModel="" wirelessType="" softwareRequirementNotes="" softwareRequirementNetworkVersion="" softwareRequirementConnectionType="" softwareRequirementConcurrentUsers="" softwareRequirementAdditionalIDNumbers="" software="" reprogram="" rentQuote="" hasPrinter="" printerModel="" phoneSystemSplitterNeeded="" phoneSystemDialOut="" PhoneCodeForDialOutComment="" phoneSystemCallWaiting="" paymentGatewayName="" hasPinPad="" pINPadModel="" frontEndType="1" frontEndComment="" debitAddendumAttached="" automaticTimeZone="" automaticTime="" automaticClose="" NeedsStarterKit="" ImprinterType="" Plate="" PlateQuality="" ToDoInstall="" ToDoInstallComment="" SuppliesEquipment="" SuppliesEquipmentComment="" DateNeededBy="" ShoppingCart="">
+      </Equipment>
+      <LeaseInfo leaseTerm="" EquipmentServiceProgram="true" totalMonthlyLeaseCharge="" NonCancelableLease="">
+      </LeaseInfo>
+      <Terminals>
+        <Terminal TerminalID="" TerminalBrand="" TerminalModel="" FrontEndName="" ModelID="" PrinterID="" PrinterName="" PinPadID="" ReProgram="" Notes="" WirelessID="" AutomaticClose="" AutomaticCloseTime="" TimeZoneID="" PhoneDialOutCodeID="" FrontEndID="">
+          <DownloadInformation LoadHolder="" Application="" AdditionalFeatures="" TiedMultiMerchantNumber="" SpecialPrompts="" SpecialFeaturesProvider="" ApplicationDDLTID="" ApplicationDDLPhone="" DateFileBuilt="" LoadInstructions="" EquipmentLocation="" PaywareMobileDevice="" PaywayreMobileDeviceVersion="">
+          </DownloadInformation>
+          <WirelessInformation WirelessCommType="" WirelessCarrier="" WirelessTcpIpGateway="" WirelessDatawireDID="" WirelessSIMCard="" WirelessESNNumber="" WirelessMANNumber="">
+          </WirelessInformation>
+          <ShippingInformation ShipTo="" ShippingServiceType="" SerialNumber="" DeploymentDate="" Condition="" Origin="">
+          </ShippingInformation>
+          <PinPadInformation PinPadModelName="" PinPadCount="" CheckReaderCount="" CardReaderCount="" FreeTerminalProgram="" EncryptionMethod="">
+          </PinPadInformation>
+          <IsDeployPinPad>
+          </IsDeployPinPad>
+          <IsDeployPrinter>
+          </IsDeployPrinter>
+          <IsDeployCheckReader>
+          </IsDeployCheckReader>
+          <IsDeployCardReader>
+          </IsDeployCardReader>
+          <IsDeployPinPadCable>
+          </IsDeployPinPadCable>
+        </Terminal>
+      </Terminals>
+      <Gateways>
+        <Gateway GatewayID="" ShoppingCart="" DeviceType="" DeviceTypeVersion="" Notes="" FrontEndID="" FrontEndName="">
+          <DownloadInformation AdditionalFeatures="" SpecialPrompts="" SpecialFeaturesProvider="" DateFileBuilt="" PaywareMobileDevice="" PaywayreMobileDeviceVersion="">
+          </DownloadInformation>
+        </Gateway>
+      </Gateways>
+      <Softwares>
+        <Software GatewayType="" SoftwareID="" FrontEndID="" SoftwareVersion="" TCPIP="" Notes="" FrontEndName="">
+        </Software>
+      </Softwares>
+      <ExistingMerchant americanExpress="" diners="" discover="" jCB=""></ExistingMerchant>
+        <Amex discountRate="" monthlyFlatFee="" grossPayType="" estimateAnnualVolume="" estimateAverageTicket="" payFrequency="" merchantInitials="">
+        </Amex>
+        <Discover discountRate="" transactionFee="" membershipFee="">
+        </Discover>
+      
+      <BankInformation name="Bank of America" address="2045 ABC BOULEVARD" address2="" city="Swiss City" state="GA" zip="00000" branch="" branchPhone="310-321-5400" contactName="" transRoutingNumber="053100850" dDA="12345678912345">
+      </BankInformation>
+      <SiteSurvey date="" typeOfBuilding="" squareFootage="" inspectorComments="">
+      </SiteSurvey>
+      <ServiceEnrollment ApplicationID="" DebitCardServices="" ETB_FNS="" ETB_FNS_Number="" CheckServices="" LeaseServices="" GiftCardServices="">
+      </ServiceEnrollment>
+      <CardAcceptance ApplicationID="" MCCredit="" MCNonPinDebit="" VisaCredit="" VisaNonPinDebit="">
+      </CardAcceptance>
+      <SalesRepInfo ApplicationID="" Auth="" InerchangeTable="" Assoc="" Grid="">
+      </SalesRepInfo>
+      <ApplicationMetadata>
+        <CustomElement1>
+        </CustomElement1>
+        <CustomElement2>
+        </CustomElement2>
+        <CustomElement3>
+        </CustomElement3>
+      </ApplicationMetadata>
+    </iPaymentApplication>]]>
+  </ApplicationXml>
+</ApplicationRequest>

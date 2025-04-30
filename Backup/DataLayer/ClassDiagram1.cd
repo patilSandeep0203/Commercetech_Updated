@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="DLPartner.ACTDataDL" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ACTDataDL.cs</FileName>
+      <HashCode>ICBgQAACAQAFBBQgAAwAAAgAgAgEAALEICCIAKAAREQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.AdministrativeDL" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AdministrativeDL.cs</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.AffiliatesDL" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AffiliatesDL.cs</FileName>
+      <HashCode>AQAAACQAAYAACAEACgAgAUAAACkAAgEAAAQAQAICAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.BannersDL" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BannersDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAACAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.BoundsDL" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BoundsDL.cs</FileName>
+      <HashCode>AAAAAAIAAAiIAAAAAAAAAEAAAAEAAAAAAIAJAAAkAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.CommissionsDL" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CommissionsDL.cs</FileName>
+      <HashCode>ACAAApACAAAAEAgAAAAAkAAACAEuQQCAkBAAACQgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.ProductsDL" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProductsDL.cs</FileName>
+      <HashCode>AAAEAAEAAAACAAAAABgBGAiEAAEEAAAAIAAAKAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.FirstAffiliatesLeadsDL" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FirstAffiliatesLeadsDL.cs</FileName>
+      <HashCode>ACAAAEAIAIAAAQAAAAQAYQAAAAAEApEABAACAAAgCAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.IMSViewDL" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IMSViewDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.IPayViewDL" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPayViewDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.MonthDL" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MonthDL.cs</FileName>
+      <HashCode>AAQAAAAAAACAAAAACACIAAAAAAEAAAAAAAAAAgAiAgg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.OnlineAppDL" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OnlineAppDL.cs</FileName>
+      <HashCode>CABAQCAATAAAAgEAIAAAIgJAQAUAAAggBABIBFQggAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.OnlineAppProcessingDL" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OnlineAppProcessingDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAgAAAAAAAUAACAIAAABBEKgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.OnlineAppStatusDL" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OnlineAppStatusDL.cs</FileName>
+      <HashCode>AAAAAAEAAAAAAAAAAQAAAIAEAAEAABAAIAQBgAAohAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.OnlineAppSummaryDL" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OnlineAppSummaryDL.cs</FileName>
+      <HashCode>BAAABAAAAAAAQAAAAAAAAkAAAIEAAAAACAAAAAAgEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.PackageDL" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PackageDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAARAAABAAAAAAQAEAAAACAAAAAIAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.PartnerLogDL" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PartnerLogDL.cs</FileName>
+      <HashCode>AAAIAAAAAAAAAAACAACAAAAAAAEAAAIAAAAAAAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.PDFDL" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PDFDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgEAAAAAAAAAAAAEEAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.ReferralsDL" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ReferralsDL.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAAIAAAAAAAAAAEgAgAAIAAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.RepInfoDL" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RepInfoDL.cs</FileName>
+      <HashCode>AAAQAAIgggEAgBAAAwAAAogAIgFFEBEAEAIAABEgAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.ResidualsDL" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ResidualsDL.cs</FileName>
+      <HashCode>8UJBgwOEQiAlWYiFIFJiCDlEAhkMYJdAhJoYEUOhKAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.SalesOppDL" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SalesOppDL.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAgQBABBAAEEEQEAAIAAAAAAghQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.UserRolesDL" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UserRolesDL.cs</FileName>
+      <HashCode>AAAAACAgACAAAAAAAAAAgAAAAAEACAgACEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPartner.UsersDL" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UsersDL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAEAAAEACBAAAAAAAAAwAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

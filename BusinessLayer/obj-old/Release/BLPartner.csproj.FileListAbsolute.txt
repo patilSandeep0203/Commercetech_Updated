@@ -1,0 +1,33 @@
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio 2005\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DLPartner.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\itextsharp.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DLPartner.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\OnlineAppClassLibrary.pdb
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\bin\Release\DLPartner.XmlSerializers.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csprojResolveAssemblyReference.cache
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\Interop.MSDATASRC.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\Interop.SmartTabs.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\Interop.VBRUN.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BLPartner.csproj.ResolveComReference.cache
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\TingWu1.CTC\Visual Studio\Projects\Partner\BusinessLayer\obj\Release\BusinessLayer.pdb
